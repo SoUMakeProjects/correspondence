@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "usage": "Evaluation only. Never loaded by application or agent input services.",
+  "scenarios": [
+    {
+      "scenario_id": "DEMO-01",
+      "base_disposition": "waiting_for_borrower",
+      "required_findings": [
+        "Request the missing legal supporting document.",
+        "Do not confirm a name update without the completed result."
+      ],
+      "followup_disposition": "eligible_for_supported_update_confirmation"
+    },
+    {
+      "scenario_id": "DEMO-02",
+      "base_disposition": "eligible_for_simulated_document_fulfillment",
+      "required_findings": [
+        "Use the current case's readable amortization schedule.",
+        "Send/index/note/closure require actual later simulator receipts."
+      ],
+      "invalid_document_disposition": "document_exception_without_fulfillment"
+    },
+    {
+      "scenario_id": "DEMO-03",
+      "base_disposition": "eligible_for_supported_scheduled_payment_response",
+      "required_findings": [
+        "Address both bill receipt and payment schedule.",
+        "Do not claim payment was disbursed.",
+        "Apply the Harbor review setting."
+      ],
+      "followup_disposition": "schedule_confirmed_but_still_not_paid"
+    },
+    {
+      "scenario_id": "DEMO-04",
+      "base_disposition": "pending_specialist_determination",
+      "required_findings": [
+        "Identify the conflicting statuses.",
+        "Reuse the existing specialist task.",
+        "Keep representative-only communication.",
+        "Retain a classification exception; no approved operational taxonomy mapping."
+      ],
+      "followup_disposition": "supported_specialist_handoff_with_communication_restriction"
+    },
+    {
+      "scenario_id": "DEMO-05",
+      "base_disposition": "waiting_for_borrower_clarification",
+      "required_findings": [
+        "Ask whether funds are an incoming payment, outgoing refund, or draw.",
+        "Do not enroll ACH or initiate a funds movement."
+      ],
+      "followup_disposition": "outgoing_refund_consent_missing"
+    }
+  ]
+}

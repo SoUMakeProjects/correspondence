@@ -1,0 +1,146 @@
+[
+  {
+    "scenario_id": "DEMO-01",
+    "variant": "base",
+    "key": "signed-request",
+    "availability": "available",
+    "storage_key": "DEMO-01/base/signed-request.pdf",
+    "sha256": "ae54952091dfa02509cb4e80807dc42817c524e462b725a581e4e8546b2b64aa"
+  },
+  {
+    "scenario_id": "DEMO-01",
+    "variant": "base",
+    "key": "legal-document",
+    "availability": "missing",
+    "storage_key": null,
+    "sha256": null
+  },
+  {
+    "scenario_id": "DEMO-01",
+    "variant": "followup",
+    "key": "signed-request",
+    "availability": "available",
+    "storage_key": "DEMO-01/followup/signed-request.pdf",
+    "sha256": "d76b27aeeb30de49b65fa0a7308dc8f1d85c8e5c72f89ebc86e5f286840051ed"
+  },
+  {
+    "scenario_id": "DEMO-01",
+    "variant": "followup",
+    "key": "legal-document",
+    "availability": "available",
+    "storage_key": "DEMO-01/followup/legal-document.pdf",
+    "sha256": "e3832ba4e673020fa04b35311a1209be3c3f3a19180471103b45ce1dfe79fc12"
+  },
+  {
+    "scenario_id": "DEMO-02",
+    "variant": "base",
+    "key": "amortization",
+    "availability": "available",
+    "storage_key": "DEMO-02/base/amortization.pdf",
+    "sha256": "55b8cd3ef18f8851727d23954e7c3b2195556818a2ff3b94151f8810d62394fe"
+  },
+  {
+    "scenario_id": "DEMO-02",
+    "variant": "missing_document",
+    "key": "amortization",
+    "availability": "missing",
+    "storage_key": null,
+    "sha256": null
+  },
+  {
+    "scenario_id": "DEMO-02",
+    "variant": "unreadable_document",
+    "key": "amortization",
+    "availability": "unreadable",
+    "storage_key": "DEMO-02/unreadable_document/amortization.pdf",
+    "sha256": "a10bad5f4982f84357d36274e8e5d1ddebf093b9f84b9d9b74648f477416e843"
+  },
+  {
+    "scenario_id": "DEMO-02",
+    "variant": "wrong_loan",
+    "key": "amortization",
+    "availability": "available",
+    "storage_key": "DEMO-02/wrong_loan/amortization.pdf",
+    "sha256": "cb568503fa58f0de86aea2f1be50a15f26207973e3ad357f5d2ac5a3aed966a6"
+  },
+  {
+    "scenario_id": "DEMO-03",
+    "variant": "base",
+    "key": "tax-bill",
+    "availability": "available",
+    "storage_key": "DEMO-03/base/tax-bill.pdf",
+    "sha256": "eda517790dcd18e164029e93cae154426a80ce4ee36f6fc27afd91f97ac2d94a"
+  },
+  {
+    "scenario_id": "DEMO-03",
+    "variant": "followup",
+    "key": "tax-bill",
+    "availability": "available",
+    "storage_key": "DEMO-03/followup/tax-bill.pdf",
+    "sha256": "2b128a7ebbc34c62e4e4d435559809e0a58124431a03724556560ff05734be01"
+  },
+  {
+    "scenario_id": "DEMO-04",
+    "variant": "base",
+    "key": "court-record",
+    "availability": "available",
+    "storage_key": "DEMO-04/base/court-record.pdf",
+    "sha256": "682560dc7e077a2a5aafaf73c45fc6ed6997b2f37146b892fa3d7f73eed2cfbd"
+  },
+  {
+    "scenario_id": "DEMO-04",
+    "variant": "base",
+    "key": "representation",
+    "availability": "available",
+    "storage_key": "DEMO-04/base/representation.pdf",
+    "sha256": "88fdc7938e7571a9d68e56b7bd00244a731bae179e81a0d992b8065318e86625"
+  },
+  {
+    "scenario_id": "DEMO-04",
+    "variant": "followup",
+    "key": "court-record",
+    "availability": "available",
+    "storage_key": "DEMO-04/followup/court-record.pdf",
+    "sha256": "ec5bd2ceab86fb8473965c9bfa2fc331bc8cd85075a4a70b8ff72883e501704a"
+  },
+  {
+    "scenario_id": "DEMO-04",
+    "variant": "followup",
+    "key": "representation",
+    "availability": "available",
+    "storage_key": "DEMO-04/followup/representation.pdf",
+    "sha256": "10c263f4fc0f85298efa18d1f59614f0f4bdf0ab645dde3f358555366435a46f"
+  },
+  {
+    "scenario_id": "DEMO-04",
+    "variant": "followup",
+    "key": "specialist-determination",
+    "availability": "available",
+    "storage_key": "DEMO-04/followup/specialist-determination.pdf",
+    "sha256": "b7a2ea84c5ec5f1885c951cfdc71520fa9c82a251b7ff0ecb93a85983e99c5de"
+  },
+  {
+    "scenario_id": "DEMO-05",
+    "variant": "base",
+    "key": "escrow-analysis",
+    "availability": "available",
+    "storage_key": "DEMO-05/base/escrow-analysis.pdf",
+    "sha256": "0a2eaea92289c4335e3061fa7782d750cb528e7a4b17e9a9b8d4a931bf75d390"
+  },
+  {
+    "scenario_id": "DEMO-05",
+    "variant": "followup",
+    "key": "escrow-analysis",
+    "availability": "available",
+    "storage_key": "DEMO-05/followup/escrow-analysis.pdf",
+    "sha256": "9333dac6d5cfaa5b45d96fdf16a6a27c992070b8ad52947acd9c374e21c97b38"
+  },
+  {
+    "scenario_id": "DEMO-05",
+    "variant": "followup",
+    "key": "clarification",
+    "availability": "available",
+    "storage_key": "DEMO-05/followup/clarification.pdf",
+    "sha256": "eb89dd027ea8de8bff61c99b5ba7ce64f5bf9a79d455e0ff0a64b8cb83c9e622"
+  }
+]

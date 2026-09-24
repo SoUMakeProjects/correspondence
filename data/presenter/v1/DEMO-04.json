@@ -1,0 +1,52 @@
+{
+  "scenario_id": "DEMO-04",
+  "documents": [
+    {
+      "key": "specialist-determination",
+      "title": "Synthetic bankruptcy specialist determination",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "The Demo Bankruptcy Team reconciled the supplied demonstration records: dismissed without discharge.",
+        "The imported discharge marker was incorrect in this synthetic case. Representative-only communication remains required.",
+        "This supplied demo result does not determine actual borrower liability or provide production disclosure wording."
+      ],
+      "facts": {
+        "determination": "dismissed_without_discharge",
+        "reference": "DEMO-BK-RESULT-004",
+        "communication_restriction": "representative_only"
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [
+    {
+      "key": "bankruptcy-review",
+      "task_type": "demo_bankruptcy_status_review",
+      "owner": "Demo Bankruptcy Team",
+      "status": "completed",
+      "pending_reason": null,
+      "request": {
+        "review_topic": "bankruptcy_status_and_communication_restrictions"
+      },
+      "result": {
+        "reference": "DEMO-BK-RESULT-004",
+        "status": "dismissed_without_discharge",
+        "communication_restriction": "representative_only",
+        "simulated": true
+      },
+      "evidence_keys": [
+        "court-record",
+        "representation",
+        "specialist-determination"
+      ]
+    }
+  ],
+  "loan_context_patch": {
+    "servicing_bankruptcy_status": "dismissed_without_discharge",
+    "servicing_status_source": "DEMO-BK-RESULT-004",
+    "specialist_determination": "DEMO-BK-RESULT-004"
+  },
+  "version": "1",
+  "synthetic": true
+}

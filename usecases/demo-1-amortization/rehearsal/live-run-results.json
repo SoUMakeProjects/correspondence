@@ -1,0 +1,358 @@
+{
+  "api_run": {
+    "summary": {
+      "run_id": "593e06a1-1909-4bf6-a3f2-d0b3c8f8c2c7",
+      "case_id": "e44e2ffd-f593-4a39-a747-04609c62a922",
+      "scenario": "DEMO-02",
+      "status": "completed",
+      "current_case_status": "closed",
+      "resumed_from": null,
+      "reason": "verified_outcome",
+      "elapsed_seconds": 34.97,
+      "elapsed_includes_recovery_waits": true,
+      "model_calls": 10,
+      "reported_tokens": 74935,
+      "usage_complete": true,
+      "source": "live_azure",
+      "completed_actions": 6,
+      "failed_actions": 0,
+      "reconciled_actions": 0,
+      "case_interventions_through_run": 0,
+      "interventions": [],
+      "recovery_count": 0,
+      "pending_concerns": 0,
+      "actions": [
+        {
+          "id": "fa5e463b-e8d4-43c0-8a65-842aa75dd4aa",
+          "operation": "cct.apply_plan",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        },
+        {
+          "id": "1644a60f-9a4d-4799-a1da-2a05a4991634",
+          "operation": "csp.prepare",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        },
+        {
+          "id": "ce091fb0-6740-46a5-a16f-bdd432c6612b",
+          "operation": "csp.send",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        },
+        {
+          "id": "c5117249-6b78-4a98-bb01-6e3ab815edd8",
+          "operation": "onbase.index",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        },
+        {
+          "id": "25ae4593-54b6-4f68-864f-a446790ab17f",
+          "operation": "ils.final_note",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        },
+        {
+          "id": "9736dbcf-3557-4576-84c5-22805d97153f",
+          "operation": "cct.close",
+          "status": "simulated_complete",
+          "outcome": "applied",
+          "code": "committed_receipt"
+        }
+      ],
+      "recovery": {
+        "case_id": "e44e2ffd-f593-4a39-a747-04609c62a922",
+        "revision": 4,
+        "blocked": false,
+        "actions": []
+      },
+      "measurement_scope": "Local synthetic demo. Action counts belong to this run; interventions include this case's history through the run; pending state is current."
+    },
+    "steps": [
+      {
+        "case_id": "e44e2ffd-f593-4a39-a747-04609c62a922",
+        "status": "queued",
+        "client": "DEMO-NORTH",
+        "evidence": [
+          [
+            null,
+            "record",
+            null
+          ],
+          [
+            "amortization",
+            "amortization_schedule",
+            null
+          ]
+        ],
+        "step": "load_case",
+        "t": 0.04
+      },
+      {
+        "key": "amortization",
+        "bytes": 28266,
+        "sha": "55b8cd3ef18f",
+        "step": "inspect_pdf",
+        "t": 0.05
+      },
+      {
+        "disposition": "ready_for_response",
+        "recipient": "marcus.j.delgado@outlook.com",
+        "review": false,
+        "findings": [],
+        "step": "assessment",
+        "t": 0.07
+      },
+      {
+        "run_id": "593e06a1-1909-4bf6-a3f2-d0b3c8f8c2c7",
+        "status": "queued",
+        "step": "start_run",
+        "t": 0.09
+      },
+      {
+        "step": "tool",
+        "tool": "observe_case",
+        "status": "ok",
+        "code": "observed",
+        "t": 3.19
+      },
+      {
+        "step": "tool",
+        "tool": "knowledge_search",
+        "status": "ok",
+        "code": "read_complete",
+        "t": 6.27
+      },
+      {
+        "step": "tool",
+        "tool": "document_read",
+        "status": "ok",
+        "code": "read_complete",
+        "t": 9.88
+      },
+      {
+        "step": "tool",
+        "tool": "apply_plan",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 13.5
+      },
+      {
+        "step": "tool",
+        "tool": "prepare_response",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 17.64
+      },
+      {
+        "step": "tool",
+        "tool": "send_response",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 21.23
+      },
+      {
+        "step": "tool",
+        "tool": "index_response",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 25.34
+      },
+      {
+        "step": "tool",
+        "tool": "record_final_note",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 28.96
+      },
+      {
+        "step": "tool",
+        "tool": "close_case",
+        "status": "simulated_complete",
+        "code": "simulated_complete",
+        "t": 32.58
+      },
+      {
+        "step": "tool",
+        "tool": "finish_run",
+        "status": "ok",
+        "code": "verified_outcome",
+        "t": 35.16
+      },
+      {
+        "status": "completed",
+        "reason": "verified_outcome",
+        "steps": 10,
+        "usage": {
+          "prompt_tokens": 74259,
+          "completion_tokens": 676,
+          "total_tokens": 74935
+        },
+        "step": "run_end",
+        "t": 35.16
+      },
+      {
+        "case_status": "closed",
+        "outbox": 1,
+        "packages": 1,
+        "notes": 1,
+        "drafts": 1,
+        "step": "artifacts",
+        "t": 35.17
+      },
+      {
+        "valid": true,
+        "issues": [],
+        "step": "completion_check",
+        "t": 35.21
+      },
+      {
+        "bytes": 30862,
+        "step": "package_pdf",
+        "t": 35.23
+      },
+      {
+        "summary": {
+          "run_id": "593e06a1-1909-4bf6-a3f2-d0b3c8f8c2c7",
+          "case_id": "e44e2ffd-f593-4a39-a747-04609c62a922",
+          "scenario": "DEMO-02",
+          "status": "completed",
+          "current_case_status": "closed",
+          "resumed_from": null,
+          "reason": "verified_outcome",
+          "elapsed_seconds": 34.97,
+          "elapsed_includes_recovery_waits": true,
+          "model_calls": 10,
+          "reported_tokens": 74935,
+          "usage_complete": true,
+          "source": "live_azure",
+          "completed_actions": 6,
+          "failed_actions": 0,
+          "reconciled_actions": 0,
+          "case_interventions_through_run": 0,
+          "interventions": [],
+          "recovery_count": 0,
+          "pending_concerns": 0,
+          "actions": [
+            {
+              "id": "fa5e463b-e8d4-43c0-8a65-842aa75dd4aa",
+              "operation": "cct.apply_plan",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            },
+            {
+              "id": "1644a60f-9a4d-4799-a1da-2a05a4991634",
+              "operation": "csp.prepare",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            },
+            {
+              "id": "ce091fb0-6740-46a5-a16f-bdd432c6612b",
+              "operation": "csp.send",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            },
+            {
+              "id": "c5117249-6b78-4a98-bb01-6e3ab815edd8",
+              "operation": "onbase.index",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            },
+            {
+              "id": "25ae4593-54b6-4f68-864f-a446790ab17f",
+              "operation": "ils.final_note",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            },
+            {
+              "id": "9736dbcf-3557-4576-84c5-22805d97153f",
+              "operation": "cct.close",
+              "status": "simulated_complete",
+              "outcome": "applied",
+              "code": "committed_receipt"
+            }
+          ],
+          "recovery": {
+            "case_id": "e44e2ffd-f593-4a39-a747-04609c62a922",
+            "revision": 4,
+            "blocked": false,
+            "actions": []
+          },
+          "measurement_scope": "Local synthetic demo. Action counts belong to this run; interventions include this case's history through the run; pending state is current."
+        },
+        "step": "summary",
+        "t": 35.25
+      },
+      {
+        "keys": [
+          "format",
+          "synthetic",
+          "exported_at",
+          "scope",
+          "run",
+          "scenario",
+          "input_hash",
+          "evidence_versions",
+          "evidence",
+          "actions",
+          "drafts",
+          "reviews",
+          "outbox",
+          "packages",
+          "notes",
+          "handoffs",
+          "concerns",
+          "interventions"
+        ],
+        "step": "export",
+        "t": 35.28
+      },
+      {
+        "runs": 1,
+        "outbox": 1,
+        "same_status": "closed",
+        "step": "reload",
+        "t": 35.28
+      }
+    ]
+  },
+  "mailbox_run": {
+    "case_created_s": 0.6,
+    "total_s": 35.2,
+    "run_status": "completed",
+    "reason": "verified_outcome",
+    "steps": 10,
+    "usage": {
+      "prompt_tokens": 74495,
+      "completion_tokens": 675,
+      "total_tokens": 75170
+    },
+    "tools": [
+      "observe_case",
+      "knowledge_search",
+      "document_read",
+      "apply_plan",
+      "prepare_response",
+      "send_response",
+      "index_response",
+      "record_final_note",
+      "close_case",
+      "finish_run"
+    ],
+    "case_status": "closed",
+    "deliveries": 1,
+    "packages": 1,
+    "notes": 1,
+    "completion_valid": true
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "code": "DEMO-NORTH",
+    "version": 2,
+    "display_name": "Northstar Residential Servicing",
+    "settings": {
+      "synthetic": true,
+      "effective_at": "2026-09-15T00:00:00Z",
+      "legal_name": "Northstar Residential Servicing, LLC",
+      "sender_email": "correspondence@northstarresidential.com",
+      "support_email": "customercare@northstarresidential.com",
+      "support_phone": "(800) 555-0142",
+      "support_hours": "Monday through Friday, 8:00 a.m. to 8:00 p.m. Eastern Time",
+      "mailing_address": "P.O. Box 4410, Columbus, OH 43216-4410",
+      "website": "www.northstarresidential.com",
+      "signature": "Customer Correspondence Team\nNorthstar Residential Servicing",
+      "disclosure_keys": [
+        "northstar-servicing-notice"
+      ],
+      "default_review_mode": "automatic",
+      "supported_product": "fixed_mortgage"
+    }
+  },
+  {
+    "code": "DEMO-HARBOR",
+    "version": 2,
+    "display_name": "Harbor Point Mortgage Services",
+    "settings": {
+      "synthetic": true,
+      "effective_at": "2026-09-15T00:00:00Z",
+      "legal_name": "Harbor Point Mortgage Services, LLC",
+      "sender_email": "correspondence@harborpointmortgage.com",
+      "support_email": "customercare@harborpointmortgage.com",
+      "support_phone": "(888) 555-0187",
+      "support_hours": "Monday through Friday, 8:30 a.m. to 7:00 p.m. Eastern Time",
+      "mailing_address": "P.O. Box 7720, Wilmington, DE 19803-7720",
+      "website": "www.harborpointmortgage.com",
+      "signature": "Customer Care Team\nHarbor Point Mortgage Services",
+      "disclosure_keys": [
+        "harbor-servicing-notice"
+      ],
+      "default_review_mode": "review_required",
+      "supported_product": "fixed_mortgage"
+    }
+  }
+]

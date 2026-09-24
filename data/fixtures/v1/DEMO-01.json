@@ -1,0 +1,70 @@
+{
+  "scenario_id": "DEMO-01",
+  "title": "Name change request – loan ending 0001",
+  "family": "profile_change",
+  "client_code": "DEMO-NORTH",
+  "borrower_display_name": "Lauren E. Whitaker",
+  "borrower_email": "lauren.whitaker@outlook.com",
+  "balance_minor": 18745000,
+  "correspondence_text": "Hello,\n\nI was recently married and would like to update the name on my mortgage account. My name is changing from Lauren E. Whitaker to Lauren E. Castellano. The loan number is 0099000001, for the property at 2214 Bramblewood Drive, Upper Arlington, OH 43221.\n\nI've attached a signed and dated letter requesting the change. Please let me know if you need anything else from me to get this done.\n\nThank you,\nLauren Castellano (formerly Whitaker)\n(614) 555-0182",
+  "concerns": [
+    "Borrower requests a legal name change on the loan after marriage",
+    "Whether the documents supplied are sufficient to make the change"
+  ],
+  "loan_context": {
+    "product": "fixed_mortgage",
+    "current_legal_name": "Lauren E. Whitaker",
+    "requested_legal_name": "Lauren E. Castellano",
+    "requester_role": "borrower",
+    "authorized_recipient": "lauren.whitaker@outlook.com",
+    "communication_restriction": "none",
+    "profile_update_result": null,
+    "borrower_phone": "(614) 555-0182",
+    "mailing_address": "2214 Bramblewood Drive, Upper Arlington, OH 43221",
+    "property_address": "2214 Bramblewood Drive, Upper Arlington, OH 43221",
+    "occupancy": "primary_residence",
+    "note_date": "2021-06-11",
+    "original_principal_minor": 21600000
+  },
+  "documents": [
+    {
+      "key": "signed-request",
+      "title": "Signed name-change request",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "I am writing to ask that you update the name on my mortgage loan. On August 22, 2026 I was married, and I have changed my legal name from Lauren E. Whitaker to Lauren E. Castellano.",
+        "Please update the borrower name on loan number 0099000001 and on all statements and correspondence for this loan. My mailing address, phone number and email address are not changing.",
+        "I can provide a copy of my marriage record if it is needed. Thank you for your help."
+      ],
+      "facts": {
+        "signed": true,
+        "signed_date": "2026-09-16",
+        "previous_name": "Lauren E. Whitaker",
+        "requested_name": "Lauren E. Castellano",
+        "reason": "marriage"
+      },
+      "declared_loan_identifier": null
+    },
+    {
+      "key": "legal-document",
+      "title": "Supporting legal name-change document",
+      "availability": "missing",
+      "kind": "document",
+      "paragraphs": [
+        "A supporting legal document has not been received."
+      ],
+      "facts": {
+        "document_received": false
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [],
+  "version": "1",
+  "synthetic": true,
+  "loan_identifier": "0099000001",
+  "ccid": "DEMO-CC-001",
+  "original_received_at": "2026-09-17T10:30:00-04:00",
+  "evaluation_at": "2026-09-22T12:00:00-04:00"
+}

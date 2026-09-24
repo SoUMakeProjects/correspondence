@@ -1,0 +1,62 @@
+{
+  "scenario_id": "DEMO-01",
+  "documents": [
+    {
+      "key": "legal-document",
+      "title": "Certified Copy of Marriage Record",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "I certify that the above is a true and correct copy of the marriage record filed in this office.",
+        "This certified copy shows the legal name of each party before the marriage and the name each party elected to use after the marriage."
+      ],
+      "facts": {
+        "document_type": "marriage_record",
+        "document_received": true,
+        "previous_name": "Lauren E. Whitaker",
+        "new_name": "Lauren E. Castellano",
+        "previous_full_name": "Lauren Elizabeth Whitaker",
+        "new_full_name": "Lauren Elizabeth Castellano",
+        "spouse_name": "Daniel Robert Castellano",
+        "marriage_date": "2026-08-22",
+        "marriage_place": "Linden, Linden County, Ohio",
+        "officiant": "Rev. Margaret A. Hollis",
+        "license_number": "2026-ML-01873",
+        "recorded_date": "2026-08-27",
+        "certified_date": "2026-09-08",
+        "issuing_authority": "Probate Court of Linden County, Ohio",
+        "certifying_officer": "Janet K. Morrow, Deputy Clerk"
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [
+    {
+      "key": "profile-update",
+      "task_type": "demo_profile_name_update",
+      "owner": "Demo Servicing Team",
+      "status": "completed",
+      "pending_reason": null,
+      "request": {
+        "requested_name": "Lauren E. Castellano"
+      },
+      "result": {
+        "reference": "DEMO-NAME-RESULT-001",
+        "completed_at": "2026-09-22T14:00:00Z",
+        "previous_name": "Lauren E. Whitaker",
+        "updated_name": "Lauren E. Castellano",
+        "simulated": true
+      },
+      "evidence_keys": [
+        "signed-request",
+        "legal-document"
+      ]
+    }
+  ],
+  "loan_context_patch": {
+    "current_legal_name": "Lauren E. Castellano",
+    "profile_update_result": "DEMO-NAME-RESULT-001"
+  },
+  "version": "1",
+  "synthetic": true
+}

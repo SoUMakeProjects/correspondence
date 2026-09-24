@@ -1,0 +1,5883 @@
+[
+  {
+    "id": "S04:r2",
+    "row_number": 2,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r3",
+    "row_number": 3,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r4",
+    "row_number": 4,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r5",
+    "row_number": 5,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r6",
+    "row_number": 6,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r7",
+    "row_number": 7,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r8",
+    "row_number": 8,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r9",
+    "row_number": 9,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r10",
+    "row_number": 10,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r11",
+    "row_number": 11,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r12",
+    "row_number": 12,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r13",
+    "row_number": 13,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r14",
+    "row_number": 14,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r15",
+    "row_number": 15,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r16",
+    "row_number": 16,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r17",
+    "row_number": 17,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r18",
+    "row_number": 18,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r19",
+    "row_number": 19,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "heading_body_mismatch",
+    "curated_item_keys": [],
+    "review_flags": [
+      "heading_body_mismatch"
+    ]
+  },
+  {
+    "id": "S04:r20",
+    "row_number": 20,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r21",
+    "row_number": 21,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r22",
+    "row_number": 22,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r23",
+    "row_number": 23,
+    "category": "1098-1099",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r24",
+    "row_number": 24,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r25",
+    "row_number": 25,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r26",
+    "row_number": 26,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r27",
+    "row_number": 27,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r28",
+    "row_number": 28,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r29",
+    "row_number": 29,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "production_bankruptcy_disclosure_requires_policy_review",
+    "curated_item_keys": [
+      "credit-conflict-guidance"
+    ],
+    "review_flags": [
+      "production_bankruptcy_disclosure_requires_policy_review"
+    ]
+  },
+  {
+    "id": "S04:r30",
+    "row_number": 30,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r31",
+    "row_number": 31,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r32",
+    "row_number": 32,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r33",
+    "row_number": 33,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r34",
+    "row_number": 34,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "production_bankruptcy_disclosure_requires_policy_review",
+    "curated_item_keys": [
+      "credit-conflict-guidance"
+    ],
+    "review_flags": [
+      "production_bankruptcy_disclosure_requires_policy_review"
+    ]
+  },
+  {
+    "id": "S04:r35",
+    "row_number": 35,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r36",
+    "row_number": 36,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r37",
+    "row_number": 37,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r38",
+    "row_number": 38,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r39",
+    "row_number": 39,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r40",
+    "row_number": 40,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r41",
+    "row_number": 41,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r42",
+    "row_number": 42,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r43",
+    "row_number": 43,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r44",
+    "row_number": 44,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r45",
+    "row_number": 45,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r46",
+    "row_number": 46,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r47",
+    "row_number": 47,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r48",
+    "row_number": 48,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r49",
+    "row_number": 49,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r50",
+    "row_number": 50,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r51",
+    "row_number": 51,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r52",
+    "row_number": 52,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r53",
+    "row_number": 53,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r54",
+    "row_number": 54,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "unrelated_topics_merged",
+    "curated_item_keys": [],
+    "review_flags": [
+      "unrelated_topics_merged"
+    ]
+  },
+  {
+    "id": "S04:r55",
+    "row_number": 55,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r56",
+    "row_number": 56,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r57",
+    "row_number": 57,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r58",
+    "row_number": 58,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r59",
+    "row_number": 59,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r60",
+    "row_number": 60,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r61",
+    "row_number": 61,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r62",
+    "row_number": 62,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r63",
+    "row_number": 63,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r64",
+    "row_number": 64,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r65",
+    "row_number": 65,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r66",
+    "row_number": 66,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r67",
+    "row_number": 67,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r68",
+    "row_number": 68,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r69",
+    "row_number": 69,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r70",
+    "row_number": 70,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r71",
+    "row_number": 71,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r72",
+    "row_number": 72,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r73",
+    "row_number": 73,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r74",
+    "row_number": 74,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r75",
+    "row_number": 75,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r76",
+    "row_number": 76,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r77",
+    "row_number": 77,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r78",
+    "row_number": 78,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r79",
+    "row_number": 79,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r80",
+    "row_number": 80,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r81",
+    "row_number": 81,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r82",
+    "row_number": 82,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r83",
+    "row_number": 83,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r84",
+    "row_number": 84,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r85",
+    "row_number": 85,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r86",
+    "row_number": 86,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r87",
+    "row_number": 87,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r88",
+    "row_number": 88,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r89",
+    "row_number": 89,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r90",
+    "row_number": 90,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r91",
+    "row_number": 91,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r92",
+    "row_number": 92,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r93",
+    "row_number": 93,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r94",
+    "row_number": 94,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r95",
+    "row_number": 95,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r96",
+    "row_number": 96,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r97",
+    "row_number": 97,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r98",
+    "row_number": 98,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r99",
+    "row_number": 99,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r100",
+    "row_number": 100,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r101",
+    "row_number": 101,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r102",
+    "row_number": 102,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r103",
+    "row_number": 103,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r104",
+    "row_number": 104,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r105",
+    "row_number": 105,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r106",
+    "row_number": 106,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r107",
+    "row_number": 107,
+    "category": "Simple Responses",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r108",
+    "row_number": 108,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r109",
+    "row_number": 109,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r110",
+    "row_number": 110,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r111",
+    "row_number": 111,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r112",
+    "row_number": 112,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r113",
+    "row_number": 113,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r114",
+    "row_number": 114,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r115",
+    "row_number": 115,
+    "category": "Account-Ownership Updates",
+    "status": "curated",
+    "reason": "selected_guidance_rewritten_for_synthetic_demo",
+    "curated_item_keys": [
+      "profile-evidence",
+      "profile-missing-template"
+    ],
+    "review_flags": []
+  },
+  {
+    "id": "S04:r116",
+    "row_number": 116,
+    "category": "Account-Ownership Updates",
+    "status": "curated",
+    "reason": "selected_guidance_rewritten_for_synthetic_demo",
+    "curated_item_keys": [
+      "profile-evidence",
+      "profile-missing-template"
+    ],
+    "review_flags": []
+  },
+  {
+    "id": "S04:r117",
+    "row_number": 117,
+    "category": "Account-Ownership Updates",
+    "status": "curated",
+    "reason": "selected_guidance_rewritten_for_synthetic_demo",
+    "curated_item_keys": [
+      "profile-confirmation-template"
+    ],
+    "review_flags": []
+  },
+  {
+    "id": "S04:r118",
+    "row_number": 118,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r119",
+    "row_number": 119,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r120",
+    "row_number": 120,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r121",
+    "row_number": 121,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r122",
+    "row_number": 122,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r123",
+    "row_number": 123,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r124",
+    "row_number": 124,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r125",
+    "row_number": 125,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r126",
+    "row_number": 126,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r127",
+    "row_number": 127,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r128",
+    "row_number": 128,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r129",
+    "row_number": 129,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r130",
+    "row_number": 130,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r131",
+    "row_number": 131,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r132",
+    "row_number": 132,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r133",
+    "row_number": 133,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r134",
+    "row_number": 134,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r135",
+    "row_number": 135,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r136",
+    "row_number": 136,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r137",
+    "row_number": 137,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r138",
+    "row_number": 138,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r139",
+    "row_number": 139,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r140",
+    "row_number": 140,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r141",
+    "row_number": 141,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r142",
+    "row_number": 142,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r143",
+    "row_number": 143,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r144",
+    "row_number": 144,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r145",
+    "row_number": 145,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r146",
+    "row_number": 146,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r147",
+    "row_number": 147,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r148",
+    "row_number": 148,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r149",
+    "row_number": 149,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r150",
+    "row_number": 150,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r151",
+    "row_number": 151,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r152",
+    "row_number": 152,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r153",
+    "row_number": 153,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r154",
+    "row_number": 154,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r155",
+    "row_number": 155,
+    "category": "Account-Ownership Updates",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r156",
+    "row_number": 156,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r157",
+    "row_number": 157,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r158",
+    "row_number": 158,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r159",
+    "row_number": 159,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r160",
+    "row_number": 160,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r161",
+    "row_number": 161,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r162",
+    "row_number": 162,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r163",
+    "row_number": 163,
+    "category": "Attorney Correspondence",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r164",
+    "row_number": 164,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r165",
+    "row_number": 165,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r166",
+    "row_number": 166,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r167",
+    "row_number": 167,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r168",
+    "row_number": 168,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r169",
+    "row_number": 169,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r170",
+    "row_number": 170,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r171",
+    "row_number": 171,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r172",
+    "row_number": 172,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r173",
+    "row_number": 173,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r174",
+    "row_number": 174,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r175",
+    "row_number": 175,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r176",
+    "row_number": 176,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r177",
+    "row_number": 177,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r178",
+    "row_number": 178,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r179",
+    "row_number": 179,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r180",
+    "row_number": 180,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r181",
+    "row_number": 181,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r182",
+    "row_number": 182,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r183",
+    "row_number": 183,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r184",
+    "row_number": 184,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r185",
+    "row_number": 185,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r186",
+    "row_number": 186,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r187",
+    "row_number": 187,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r188",
+    "row_number": 188,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r189",
+    "row_number": 189,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r190",
+    "row_number": 190,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r191",
+    "row_number": 191,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r192",
+    "row_number": 192,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r193",
+    "row_number": 193,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r194",
+    "row_number": 194,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r195",
+    "row_number": 195,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r196",
+    "row_number": 196,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r197",
+    "row_number": 197,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r198",
+    "row_number": 198,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r199",
+    "row_number": 199,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r200",
+    "row_number": 200,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r201",
+    "row_number": 201,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r202",
+    "row_number": 202,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r203",
+    "row_number": 203,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r204",
+    "row_number": 204,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r205",
+    "row_number": 205,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r206",
+    "row_number": 206,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r207",
+    "row_number": 207,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r208",
+    "row_number": 208,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r209",
+    "row_number": 209,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r210",
+    "row_number": 210,
+    "category": "Escrow",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r211",
+    "row_number": 211,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r212",
+    "row_number": 212,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r213",
+    "row_number": 213,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r214",
+    "row_number": 214,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r215",
+    "row_number": 215,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r216",
+    "row_number": 216,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r217",
+    "row_number": 217,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r218",
+    "row_number": 218,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r219",
+    "row_number": 219,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r220",
+    "row_number": 220,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r221",
+    "row_number": 221,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r222",
+    "row_number": 222,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r223",
+    "row_number": 223,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r224",
+    "row_number": 224,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r225",
+    "row_number": 225,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r226",
+    "row_number": 226,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r227",
+    "row_number": 227,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r228",
+    "row_number": 228,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r229",
+    "row_number": 229,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "mixed_instructions_and_frequency_conflict",
+    "curated_item_keys": [
+      "eft-intent-guidance"
+    ],
+    "review_flags": [
+      "mixed_instructions_and_frequency_conflict"
+    ]
+  },
+  {
+    "id": "S04:r230",
+    "row_number": 230,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r231",
+    "row_number": 231,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r232",
+    "row_number": 232,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r233",
+    "row_number": 233,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r234",
+    "row_number": 234,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r235",
+    "row_number": 235,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r236",
+    "row_number": 236,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r237",
+    "row_number": 237,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r238",
+    "row_number": 238,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r239",
+    "row_number": 239,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r240",
+    "row_number": 240,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r241",
+    "row_number": 241,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r242",
+    "row_number": 242,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r243",
+    "row_number": 243,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r244",
+    "row_number": 244,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r245",
+    "row_number": 245,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r246",
+    "row_number": 246,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r247",
+    "row_number": 247,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r248",
+    "row_number": 248,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r249",
+    "row_number": 249,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r250",
+    "row_number": 250,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r251",
+    "row_number": 251,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r252",
+    "row_number": 252,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r253",
+    "row_number": 253,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r254",
+    "row_number": 254,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r255",
+    "row_number": 255,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r256",
+    "row_number": 256,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r257",
+    "row_number": 257,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r258",
+    "row_number": 258,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r259",
+    "row_number": 259,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r260",
+    "row_number": 260,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r261",
+    "row_number": 261,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r262",
+    "row_number": 262,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r263",
+    "row_number": 263,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r264",
+    "row_number": 264,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r265",
+    "row_number": 265,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r266",
+    "row_number": 266,
+    "category": "PMT - STMT",
+    "status": "curated",
+    "reason": "selected_guidance_rewritten_for_synthetic_demo",
+    "curated_item_keys": [
+      "eft-intent-guidance",
+      "refund-consent-guidance"
+    ],
+    "review_flags": []
+  },
+  {
+    "id": "S04:r267",
+    "row_number": 267,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r268",
+    "row_number": 268,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r269",
+    "row_number": 269,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r270",
+    "row_number": 270,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r271",
+    "row_number": 271,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r272",
+    "row_number": 272,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r273",
+    "row_number": 273,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r274",
+    "row_number": 274,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r275",
+    "row_number": 275,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r276",
+    "row_number": 276,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r277",
+    "row_number": 277,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r278",
+    "row_number": 278,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r279",
+    "row_number": 279,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r280",
+    "row_number": 280,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r281",
+    "row_number": 281,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r282",
+    "row_number": 282,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r283",
+    "row_number": 283,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r284",
+    "row_number": 284,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r285",
+    "row_number": 285,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r286",
+    "row_number": 286,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r287",
+    "row_number": 287,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r288",
+    "row_number": 288,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r289",
+    "row_number": 289,
+    "category": "PMT - STMT",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r290",
+    "row_number": 290,
+    "category": "Taxes - Insurance",
+    "status": "curated",
+    "reason": "selected_guidance_rewritten_for_synthetic_demo",
+    "curated_item_keys": [
+      "tax-schedule-guidance",
+      "tax-scheduled-template"
+    ],
+    "review_flags": []
+  },
+  {
+    "id": "S04:r291",
+    "row_number": 291,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r292",
+    "row_number": 292,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "merged_incomplete_tax_wording",
+    "curated_item_keys": [
+      "tax-schedule-guidance"
+    ],
+    "review_flags": [
+      "merged_incomplete_tax_wording"
+    ]
+  },
+  {
+    "id": "S04:r293",
+    "row_number": 293,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r294",
+    "row_number": 294,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r295",
+    "row_number": 295,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r296",
+    "row_number": 296,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r297",
+    "row_number": 297,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r298",
+    "row_number": 298,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r299",
+    "row_number": 299,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r300",
+    "row_number": 300,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r301",
+    "row_number": 301,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r302",
+    "row_number": 302,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r303",
+    "row_number": 303,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r304",
+    "row_number": 304,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r305",
+    "row_number": 305,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r306",
+    "row_number": 306,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r307",
+    "row_number": 307,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r308",
+    "row_number": 308,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r309",
+    "row_number": 309,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r310",
+    "row_number": 310,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r311",
+    "row_number": 311,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r312",
+    "row_number": 312,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r313",
+    "row_number": 313,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r314",
+    "row_number": 314,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r315",
+    "row_number": 315,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r316",
+    "row_number": 316,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r317",
+    "row_number": 317,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r318",
+    "row_number": 318,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r319",
+    "row_number": 319,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r320",
+    "row_number": 320,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r321",
+    "row_number": 321,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r322",
+    "row_number": 322,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r323",
+    "row_number": 323,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r324",
+    "row_number": 324,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r325",
+    "row_number": 325,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r326",
+    "row_number": 326,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r327",
+    "row_number": 327,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r328",
+    "row_number": 328,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r329",
+    "row_number": 329,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r330",
+    "row_number": 330,
+    "category": "Taxes - Insurance",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r331",
+    "row_number": 331,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r332",
+    "row_number": 332,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r333",
+    "row_number": 333,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r334",
+    "row_number": 334,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r335",
+    "row_number": 335,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r336",
+    "row_number": 336,
+    "category": "BANA-Not QWR's - Links",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r337",
+    "row_number": 337,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r338",
+    "row_number": 338,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r339",
+    "row_number": 339,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r340",
+    "row_number": 340,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r341",
+    "row_number": 341,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r342",
+    "row_number": 342,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r343",
+    "row_number": 343,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r344",
+    "row_number": 344,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r345",
+    "row_number": 345,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r346",
+    "row_number": 346,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r347",
+    "row_number": 347,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r348",
+    "row_number": 348,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r349",
+    "row_number": 349,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r350",
+    "row_number": 350,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r351",
+    "row_number": 351,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r352",
+    "row_number": 352,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r353",
+    "row_number": 353,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r354",
+    "row_number": 354,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r355",
+    "row_number": 355,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r356",
+    "row_number": 356,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r357",
+    "row_number": 357,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r358",
+    "row_number": 358,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r359",
+    "row_number": 359,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r360",
+    "row_number": 360,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r361",
+    "row_number": 361,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r362",
+    "row_number": 362,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r363",
+    "row_number": 363,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r364",
+    "row_number": 364,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r365",
+    "row_number": 365,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r366",
+    "row_number": 366,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r367",
+    "row_number": 367,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r368",
+    "row_number": 368,
+    "category": "Credit -FC-LM-FEMA",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r369",
+    "row_number": 369,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r370",
+    "row_number": 370,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r371",
+    "row_number": 371,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r372",
+    "row_number": 372,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r373",
+    "row_number": 373,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r374",
+    "row_number": 374,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r375",
+    "row_number": 375,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r376",
+    "row_number": 376,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r377",
+    "row_number": 377,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r378",
+    "row_number": 378,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r379",
+    "row_number": 379,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r380",
+    "row_number": 380,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r381",
+    "row_number": 381,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r382",
+    "row_number": 382,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r383",
+    "row_number": 383,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r384",
+    "row_number": 384,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r385",
+    "row_number": 385,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r386",
+    "row_number": 386,
+    "category": "Assumption",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r387",
+    "row_number": 387,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r388",
+    "row_number": 388,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r389",
+    "row_number": 389,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r390",
+    "row_number": 390,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r391",
+    "row_number": 391,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r392",
+    "row_number": 392,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r393",
+    "row_number": 393,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r394",
+    "row_number": 394,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r395",
+    "row_number": 395,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r396",
+    "row_number": 396,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r397",
+    "row_number": 397,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r398",
+    "row_number": 398,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r399",
+    "row_number": 399,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r400",
+    "row_number": 400,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r401",
+    "row_number": 401,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r402",
+    "row_number": 402,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_category_subcategory",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r403",
+    "row_number": 403,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r404",
+    "row_number": 404,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r405",
+    "row_number": 405,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r406",
+    "row_number": 406,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r407",
+    "row_number": 407,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r408",
+    "row_number": 408,
+    "category": "Forms-REO-Job Aids-FAQ",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r409",
+    "row_number": 409,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r410",
+    "row_number": 410,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r411",
+    "row_number": 411,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r412",
+    "row_number": 412,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r413",
+    "row_number": 413,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r414",
+    "row_number": 414,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r415",
+    "row_number": 415,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r416",
+    "row_number": 416,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r417",
+    "row_number": 417,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r418",
+    "row_number": 418,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r419",
+    "row_number": 419,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r420",
+    "row_number": 420,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r421",
+    "row_number": 421,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r422",
+    "row_number": 422,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r423",
+    "row_number": 423,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r424",
+    "row_number": 424,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r425",
+    "row_number": 425,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r426",
+    "row_number": 426,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r427",
+    "row_number": 427,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r428",
+    "row_number": 428,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r429",
+    "row_number": 429,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r430",
+    "row_number": 430,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r431",
+    "row_number": 431,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r432",
+    "row_number": 432,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r433",
+    "row_number": 433,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r434",
+    "row_number": 434,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r435",
+    "row_number": 435,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r436",
+    "row_number": 436,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r437",
+    "row_number": 437,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r438",
+    "row_number": 438,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r439",
+    "row_number": 439,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r440",
+    "row_number": 440,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r441",
+    "row_number": 441,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r442",
+    "row_number": 442,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r443",
+    "row_number": 443,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r444",
+    "row_number": 444,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r445",
+    "row_number": 445,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r446",
+    "row_number": 446,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r447",
+    "row_number": 447,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r448",
+    "row_number": 448,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r449",
+    "row_number": 449,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r450",
+    "row_number": 450,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_body_or_fragment"
+    ]
+  },
+  {
+    "id": "S04:r451",
+    "row_number": 451,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r452",
+    "row_number": 452,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r453",
+    "row_number": 453,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r454",
+    "row_number": 454,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r455",
+    "row_number": 455,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r456",
+    "row_number": 456,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r457",
+    "row_number": 457,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r458",
+    "row_number": 458,
+    "category": "Website",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r459",
+    "row_number": 459,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r460",
+    "row_number": 460,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r461",
+    "row_number": 461,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r462",
+    "row_number": 462,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r463",
+    "row_number": 463,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r464",
+    "row_number": 464,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r465",
+    "row_number": 465,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r466",
+    "row_number": 466,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r467",
+    "row_number": 467,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r468",
+    "row_number": 468,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r469",
+    "row_number": 469,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r470",
+    "row_number": 470,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r471",
+    "row_number": 471,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r472",
+    "row_number": 472,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r473",
+    "row_number": 473,
+    "category": "Recast",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r474",
+    "row_number": 474,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "credential_bearing_source_row",
+    "curated_item_keys": [],
+    "review_flags": [
+      "credential_bearing_source_row"
+    ]
+  },
+  {
+    "id": "S04:r475",
+    "row_number": 475,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration"
+    ]
+  },
+  {
+    "id": "S04:r476",
+    "row_number": 476,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r477",
+    "row_number": 477,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r478",
+    "row_number": 478,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r479",
+    "row_number": 479,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r480",
+    "row_number": 480,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r481",
+    "row_number": 481,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r482",
+    "row_number": 482,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r483",
+    "row_number": 483,
+    "category": "Signitures-Kitework Emails",
+    "status": "excluded",
+    "reason": "production_sender_contact_configuration",
+    "curated_item_keys": [],
+    "review_flags": [
+      "production_sender_contact_configuration",
+      "repeated_category_subcategory"
+    ]
+  },
+  {
+    "id": "S04:r484",
+    "row_number": 484,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r485",
+    "row_number": 485,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r486",
+    "row_number": 486,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r487",
+    "row_number": 487,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r488",
+    "row_number": 488,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r489",
+    "row_number": 489,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r490",
+    "row_number": 490,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r491",
+    "row_number": 491,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r492",
+    "row_number": 492,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r493",
+    "row_number": 493,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r494",
+    "row_number": 494,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r495",
+    "row_number": 495,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r496",
+    "row_number": 496,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r497",
+    "row_number": 497,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r498",
+    "row_number": 498,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r499",
+    "row_number": 499,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r500",
+    "row_number": 500,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r501",
+    "row_number": 501,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r502",
+    "row_number": 502,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r503",
+    "row_number": 503,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r504",
+    "row_number": 504,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r505",
+    "row_number": 505,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r506",
+    "row_number": 506,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r507",
+    "row_number": 507,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r508",
+    "row_number": 508,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r509",
+    "row_number": 509,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r510",
+    "row_number": 510,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r511",
+    "row_number": 511,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r512",
+    "row_number": 512,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r513",
+    "row_number": 513,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r514",
+    "row_number": 514,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "short_or_fragmentary_entry",
+    "curated_item_keys": [],
+    "review_flags": [
+      "short_or_fragmentary_entry"
+    ]
+  },
+  {
+    "id": "S04:r515",
+    "row_number": 515,
+    "category": "Task",
+    "status": "requires_review",
+    "reason": "task_and_unrelated_identity_instructions",
+    "curated_item_keys": [],
+    "review_flags": [
+      "task_and_unrelated_identity_instructions"
+    ]
+  },
+  {
+    "id": "S04:r516",
+    "row_number": 516,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r517",
+    "row_number": 517,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r518",
+    "row_number": 518,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r519",
+    "row_number": 519,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "incomplete_heloc_fragment",
+    "curated_item_keys": [],
+    "review_flags": [
+      "incomplete_heloc_fragment"
+    ]
+  },
+  {
+    "id": "S04:r520",
+    "row_number": 520,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r521",
+    "row_number": 521,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r522",
+    "row_number": 522,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r523",
+    "row_number": 523,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "heloc_only_procedure_outside_fixed_mortgage_scope",
+    "curated_item_keys": [
+      "eft-intent-guidance"
+    ],
+    "review_flags": [
+      "heloc_only_procedure_outside_fixed_mortgage_scope"
+    ]
+  },
+  {
+    "id": "S04:r524",
+    "row_number": 524,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r525",
+    "row_number": 525,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r526",
+    "row_number": 526,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r527",
+    "row_number": 527,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  },
+  {
+    "id": "S04:r528",
+    "row_number": 528,
+    "category": "HELOC-SOCURE",
+    "status": "requires_review",
+    "reason": "not_curated_for_selected_release",
+    "curated_item_keys": [],
+    "review_flags": [
+      "not_curated_for_selected_release"
+    ]
+  }
+]

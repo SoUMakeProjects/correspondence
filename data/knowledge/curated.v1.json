@@ -1,0 +1,607 @@
+[
+  {
+    "key": "profile-evidence",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Evidence for an ordinary legal-name change",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-01"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S04:r115",
+      "S04:r116",
+      "P03"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "For an ordinary non-HELOC legal-name change, obtain a handwritten signed and dated request plus one legal document showing the change. Ask for identity evidence if the change is not established. Distinguish evidence received, a task requested, and a verified completed update.",
+    "required_facts": [
+      "product",
+      "requester_authority",
+      "signed_request",
+      "legal_document"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "HELOC requirements are separate and not approved by this item. Production upload/contact instructions are omitted."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "profile-missing-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Request missing legal-name evidence",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-01"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S04:r115",
+      "S04:r116",
+      "P03"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "We received your request to change your name. Please provide {missing_items}. We will review the supplied evidence before confirming any account update.",
+    "required_facts": [
+      "missing_items",
+      "requester_authority"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use."
+    ],
+    "allowed_placeholders": [
+      "missing_items"
+    ],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "profile-confirmation-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Confirm a supported name update",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-01"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S04:r117",
+      "P01"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "The simulated servicing record confirms your name was updated from {previous_name} to {updated_name}. Reference: {result_reference}.",
+    "required_facts": [
+      "completed_profile_update_result",
+      "previous_name",
+      "updated_name",
+      "result_reference"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Never use a request or pending task as completion evidence."
+    ],
+    "allowed_placeholders": [
+      "previous_name",
+      "updated_name",
+      "result_reference"
+    ],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "document-fulfillment",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Document fulfillment prerequisites",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-02"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S01",
+      "D03"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Retrieve the available amortization schedule. Match its loan, case and client to the request, confirm it is readable and current, and attach the actual document. Sending, indexing and closure each require their own recorded result.",
+    "required_facts": [
+      "document_identity",
+      "readable_document",
+      "authorized_recipient",
+      "client_identity"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Referenced historical attachments were not supplied; the fixture document is newly generated."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "document-response-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Amortization schedule response",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-02"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "D03"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "The current synthetic amortization schedule for loan {loan_identifier} is attached. It shows the scheduled principal and interest installments using the terms shown in the document.",
+    "required_facts": [
+      "validated_attachment",
+      "loan_identifier"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Only eligible after the attachment exists and is validated."
+    ],
+    "allowed_placeholders": [
+      "loan_identifier"
+    ],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "tax-schedule-guidance",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Separate tax receipt, schedule and payment",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-03"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S04:r290",
+      "S04:r292",
+      "T01",
+      "T02",
+      "T03"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Compare the supplied bill with the escrow responsibility, tax period, payee, amount, due date and existing tax task. Confirm receipt separately from payment timing. A schedule supports a scheduled-payment statement; only a disbursement record supports a paid statement. Reuse an existing task when the records conflict.",
+    "required_facts": [
+      "tax_bill",
+      "tax_tracking",
+      "existing_tasks"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Row 292 contains merged/incomplete wording and remains under review; only the supported schedule distinction is reconstructed. No unconditional promise or production tax policy is imported."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "tax-scheduled-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Report the verified tax schedule",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-03"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "T03",
+      "S04:r290"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "We received your {tax_period} bill. The synthetic tax record shows {amount} scheduled for {scheduled_date}, before the {due_date} due date. The record does not show a completed payment.",
+    "required_facts": [
+      "bill_receipt",
+      "matching_tax_tracking",
+      "scheduled_status",
+      "no_disbursement",
+      "review_if_required"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use."
+    ],
+    "allowed_placeholders": [
+      "tax_period",
+      "amount",
+      "scheduled_date",
+      "due_date"
+    ],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "credit-conflict-guidance",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Bankruptcy conflict and specialist precedence",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-04"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "C01",
+      "S04:r29",
+      "S04:r34",
+      "BRD:7.2"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "When bankruptcy-related source records disagree, record the conflict and obtain an authoritative specialist result before making a definitive status or liability statement. Preserve representation and contact restrictions. Reuse the existing review task. An unapproved operational taxonomy mapping remains an explicit exception.",
+    "required_facts": [
+      "bankruptcy_records",
+      "representation",
+      "specialist_result"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "No legal disclosure text is approved here. Rows 29 and 34 remain subject to policy review; dismissed and discharged are not interchangeable."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "credit-handoff-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Record the unresolved specialist handoff",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-04"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "C01",
+      "BRD:7.2"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "The available records contain conflicting bankruptcy statuses. The existing specialist review {task_reference} is pending. Communication remains subject to the recorded representative restriction.",
+    "required_facts": [
+      "conflicting_evidence",
+      "existing_task",
+      "communication_restriction"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Internal handoff text only; not borrower-facing legal advice or a liability determination."
+    ],
+    "allowed_placeholders": [
+      "task_reference"
+    ],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "eft-intent-guidance",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Clarify EFT direction before procedure selection",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "L03",
+      "S04:r229",
+      "S04:r266",
+      "S04:r523",
+      "BRD:7.2"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Establish whether EFT means a payment to the servicer, an outgoing refund, or a HELOC draw. Then gather the relevant consent, product and existing-request evidence. Do not infer recurring-payment enrollment from an ambiguous request.",
+    "required_facts": [
+      "eft_intent",
+      "product",
+      "authorization"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Row 229 mixes recurrence instructions and contains an unresolved frequency inconsistency; no schedule rules are imported. Row 523 is HELOC-only and supplies a branch distinction, not authority for a fixed-mortgage draw."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "eft-clarification-template",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Ask for the EFT purpose",
+    "kind": "template",
+    "scenario_ids": [
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "L03",
+      "BRD:7.2"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Does your EFT request concern an incoming mortgage payment, an outgoing refund to you, or a draw from a line of credit? Please identify the purpose so we can review the applicable requirements.",
+    "required_facts": [
+      "eft_intent_missing"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "refund-consent-guidance",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Outgoing refund consent",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S04:r266"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "For an outgoing refund, verify entitlement and the required signed written consent before considering an electronic disbursement. A clarification of intent is not consent or a completed funds transfer.",
+    "required_facts": [
+      "outgoing_refund_intent",
+      "entitlement",
+      "signed_consent"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "No bank account data is collected in these fixtures. Detailed production banking and delivery procedures remain deferred."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "attachment-guidance",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Identity, recipient and document checks",
+    "kind": "guidance",
+    "scenario_ids": [
+      "DEMO-01",
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH",
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "S01",
+      "BRD:6.5"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Before preparing a response, confirm the case and loan identity, client sender, authorized recipient, document scope and readability. Missing, unreadable and wrong-loan attachments require a specific exception. Select only the applicable curated demo text; source-review items are not response templates.",
+    "required_facts": [
+      "case_identity",
+      "loan_identity",
+      "client_identity",
+      "recipient_authority",
+      "attachment_metadata"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "This item describes prerequisites; enforcement is implemented in later rule and simulator phases."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "demo-disclosure-north",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Northstar synthetic-demo disclosure",
+    "kind": "disclosure",
+    "scenario_ids": [
+      "DEMO-01",
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "DEMO:client-configuration"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Northstar Demo Servicing: this communication uses fictional records for a software demonstration. No real loan, payment, servicing change or borrower communication is involved.",
+    "required_facts": [
+      "client_code=DEMO-NORTH"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Authored for the demo; not a reproduction of any company's approved disclosure."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "northstar-servicing-notice",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Northstar borrower notice",
+    "kind": "disclosure",
+    "scenario_ids": [
+      "DEMO-01",
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-NORTH"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "DEMO:client-configuration"
+    ],
+    "effective_at": "2026-09-15T00:00:00Z",
+    "content": "Northstar Residential Servicing, LLC is a debt collector. This communication is an attempt to collect a debt, and any information obtained will be used for that purpose. If you are a debtor in bankruptcy or have received a bankruptcy discharge of this debt, this communication is provided for informational purposes only and is not an attempt to collect a debt from you personally.",
+    "required_facts": [
+      "client_code=DEMO-NORTH"
+    ],
+    "limitations": [
+      "Authored for the demo in the style of a servicer notice; not a reproduction of any company's approved disclosure.",
+      "Fictional company; not approved for operational use."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "demo-disclosure-harbor",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Harbor synthetic-demo disclosure",
+    "kind": "disclosure",
+    "scenario_ids": [
+      "DEMO-01",
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "DEMO:client-configuration"
+    ],
+    "effective_at": "2026-09-01T00:00:00Z",
+    "content": "Harbor Demo Servicing: this is synthetic demonstration correspondence. It has no effect on a real account and does not establish a payment or legal determination.",
+    "required_facts": [
+      "client_code=DEMO-HARBOR"
+    ],
+    "limitations": [
+      "Synthetic MVP guidance only; not approved for operational use.",
+      "Authored for the demo; not a reproduction of any company's approved disclosure."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  },
+  {
+    "key": "harbor-servicing-notice",
+    "version": 1,
+    "status": "curated_demo",
+    "title": "Harbor Point borrower notice",
+    "kind": "disclosure",
+    "scenario_ids": [
+      "DEMO-01",
+      "DEMO-02",
+      "DEMO-03",
+      "DEMO-04",
+      "DEMO-05"
+    ],
+    "client_codes": [
+      "DEMO-HARBOR"
+    ],
+    "products": [
+      "fixed_mortgage"
+    ],
+    "source_references": [
+      "DEMO:client-configuration"
+    ],
+    "effective_at": "2026-09-15T00:00:00Z",
+    "content": "Harbor Point Mortgage Services, LLC is a debt collector. This communication is an attempt to collect a debt, and any information obtained will be used for that purpose. If you are a debtor in bankruptcy or have received a bankruptcy discharge of this debt, this communication is provided for informational purposes only and is not an attempt to collect a debt from you personally.",
+    "required_facts": [
+      "client_code=DEMO-HARBOR"
+    ],
+    "limitations": [
+      "Authored for the demo in the style of a servicer notice; not a reproduction of any company's approved disclosure.",
+      "Fictional company; not approved for operational use."
+    ],
+    "allowed_placeholders": [],
+    "owner": "demo_implementation"
+  }
+]

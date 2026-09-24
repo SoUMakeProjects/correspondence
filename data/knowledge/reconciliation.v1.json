@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "taxonomy_count": 149,
+  "knowledge_row_count": 527,
+  "taxonomy_distinct_subclass_labels": 144,
+  "summary_reported_rows": 525,
+  "count_basis": "Extracted Data physical rows 2 through 528",
+  "categories": {
+    "1098-1099": 22,
+    "Simple Responses": 84,
+    "Account-Ownership Updates": 48,
+    "Attorney Correspondence": 8,
+    "Escrow": 47,
+    "PMT - STMT": 79,
+    "Taxes - Insurance": 41,
+    "BANA-Not QWR's - Links": 6,
+    "Credit -FC-LM-FEMA": 32,
+    "Assumption": 18,
+    "Forms-REO-Job Aids-FAQ": 22,
+    "Website": 50,
+    "Recast": 15,
+    "Signitures-Kitework Emails": 10,
+    "Task": 32,
+    "HELOC-SOCURE": 13
+  },
+  "statuses": {
+    "requires_review": 512,
+    "curated": 5,
+    "excluded": 10
+  },
+  "curated_item_count": 17,
+  "repeated_label_groups": 14,
+  "repeated_body_groups": 5,
+  "source_files": {
+    "Class - Sub Class.xlsx": "57abfaf37a765afa7dcc91ab1b7bd9c43443c4d052518a92a0ceea55ec79f6e8",
+    "Inquiry_Responses_Extracted_Pro.xlsx": "1caedcd7e88635228180540f13b8f3c4fe7cab135e4e34ad0e62faad05cc95a1"
+  },
+  "raw_response_text_exported": false
+}

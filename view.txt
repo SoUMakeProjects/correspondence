@@ -1,0 +1,3 @@
+apply the same font to mailbox as its applied to login page. adjust the sizes of sections of mailbox as you deem fit. font size is alright no need to change for mailbox. 
+mailbox has a reset button, similar button needs to be introduced above sign out in correspondence app, the reset buttons should be able to communicate with each other and they must reset their individual cases to base state.
+pls do the above changes

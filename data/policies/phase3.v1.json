@@ -1,0 +1,13 @@
+{
+  "version": "demo-rules-1.0",
+  "scope": "Synthetic selected scenarios only; operational gaps are not approvals.",
+  "source": "BRD v1.4, sections 6 and 8; RULE-01 through RULE-05, RULE-08, RULE-09, RULE-13",
+  "pending_review": "Next Eastern weekday at the same local time (demo scheduling convention).",
+  "scenarios": {
+    "DEMO-01": {"assessment": "inquiry", "credit_error": false, "taxonomy_id": null, "task_type": "demo_profile_name_update", "required_documents": ["signed-request", "legal-document"]},
+    "DEMO-02": {"assessment": "inquiry", "credit_error": false, "taxonomy_id": "S03:r122", "task_type": null, "required_documents": ["amortization"]},
+    "DEMO-03": {"assessment": "inquiry", "credit_error": false, "taxonomy_id": "S03:r103", "task_type": "demo_tax_schedule_review", "required_documents": ["tax-bill"]},
+    "DEMO-04": {"assessment": "dispute", "credit_error": true, "taxonomy_id": null, "task_type": "demo_bankruptcy_status_review", "required_documents": ["court-record", "representation"]},
+    "DEMO-05": {"assessment": "inquiry", "credit_error": false, "taxonomy_id": null, "task_type": null, "required_documents": []}
+  }
+}

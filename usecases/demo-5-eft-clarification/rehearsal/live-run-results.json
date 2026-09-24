@@ -1,0 +1,399 @@
+{
+  "recorded_on": "2026-09-23",
+  "deployment": "gpt-5.6-sol",
+  "api_path": {
+    "path": "api",
+    "checked_at": "2026-09-24T01:33:04.734428+00:00",
+    "overall": "passed",
+    "checks": {
+      "initial_clarification_requested": true,
+      "expected_case_status": true,
+      "receipt_anchor_preserved": true,
+      "all_runs_live": true,
+      "claims_validated": true,
+      "no_duplicate_delivery": true,
+      "consent_still_required": true,
+      "two_borrower_letters": true,
+      "clarification_explains_meanings": true,
+      "refund_authorization_requested": true,
+      "no_funds_moved": true
+    },
+    "final_case_status": "waiting_for_borrower",
+    "interventions": [
+      {
+        "kind": "eft_clarification"
+      }
+    ],
+    "model": {
+      "provider": "azure_openai",
+      "source": "live_azure",
+      "prompt_version": "phase8-v3",
+      "tool_contract": 7,
+      "limits": {
+        "max_steps": 28,
+        "max_seconds": 300,
+        "max_model_calls": 28,
+        "max_total_tokens": 250000,
+        "max_completion_tokens": 1600,
+        "max_context_characters": 100000
+      }
+    },
+    "runs": [
+      {
+        "summary": {
+          "run_id": "1a0d2af7-3015-42c2-a8fa-e7abdbfbf2d7",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 27.58,
+          "model_calls": 8,
+          "reported_tokens": 50292,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 49735,
+          "completion_tokens": 557,
+          "total_tokens": 50292
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "apply_plan",
+          "prepare_response",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 4,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 8,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "40851d42-424e-4e47-b898-e281cb8f65f8",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 29.76,
+          "model_calls": 8,
+          "reported_tokens": 57743,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 57160,
+          "completion_tokens": 583,
+          "total_tokens": 57743
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "apply_plan",
+          "prepare_response",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 4,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 8,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      }
+    ],
+    "deliveries": 2,
+    "packages": 2,
+    "notes": 2
+  },
+  "mailbox_path": {
+    "path": "mailbox",
+    "checked_at": "2026-09-24T01:34:03.988007+00:00",
+    "overall": "passed",
+    "checks": {
+      "initial_clarification_requested": true,
+      "expected_case_status": true,
+      "receipt_anchor_preserved": true,
+      "all_runs_live": true,
+      "claims_validated": true,
+      "no_duplicate_delivery": true,
+      "all_runs_automatically_triggered": true,
+      "same_records_in_system_views": true,
+      "mailbox_contains_actual_responses": true,
+      "reply_stays_in_original_case": true,
+      "consent_still_required": true,
+      "two_borrower_letters": true,
+      "clarification_explains_meanings": true,
+      "refund_authorization_requested": true,
+      "no_funds_moved": true
+    },
+    "final_case_status": "waiting_for_borrower",
+    "interventions": [
+      {
+        "kind": "borrower_email",
+        "input": "eft_clarification"
+      }
+    ],
+    "model": {
+      "provider": "azure_openai",
+      "source": "live_azure",
+      "prompt_version": "phase8-v3",
+      "tool_contract": 7,
+      "limits": {
+        "max_steps": 28,
+        "max_seconds": 300,
+        "max_model_calls": 28,
+        "max_total_tokens": 250000,
+        "max_completion_tokens": 1600,
+        "max_context_characters": 100000
+      }
+    },
+    "runs": [
+      {
+        "summary": {
+          "run_id": "94f78ed7-f45b-48ca-878a-e2d5d8c4af17",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 28.51,
+          "model_calls": 8,
+          "reported_tokens": 50448,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 49958,
+          "completion_tokens": 490,
+          "total_tokens": 50448
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "apply_plan",
+          "prepare_response",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 4,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 8,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "a6892f29-2be7-4838-bd56-fbe868c17630",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 27.15,
+          "model_calls": 8,
+          "reported_tokens": 61896,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 61331,
+          "completion_tokens": 565,
+          "total_tokens": 61896
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "apply_plan",
+          "prepare_response",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 4,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 8,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      }
+    ],
+    "deliveries": 2,
+    "packages": 2,
+    "notes": 2
+  }
+}

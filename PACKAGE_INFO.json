@@ -1,0 +1,52 @@
+{
+  "package_type": "source",
+  "version": "0.9.0",
+  "built_at_utc": "20260923T154625747952Z",
+  "original_source_documents_included": true,
+  "reference_workbook": "Values-only copy with credential and sender rows redacted",
+  "redacted_rows": [
+    {
+      "sheet": "Extracted Data",
+      "row": 474
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 475
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 476
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 477
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 478
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 479
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 480
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 481
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 482
+    },
+    {
+      "sheet": "Extracted Data",
+      "row": 483
+    }
+  ],
+  "local_env_included": false,
+  "runtime_case_data_included": false,
+  "installed_dependencies_included": false
+}

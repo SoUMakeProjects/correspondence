@@ -1,0 +1,83 @@
+{
+  "scenario_id": "DEMO-04",
+  "title": "Credit-reporting concern with conflicting bankruptcy records",
+  "family": "credit_reporting",
+  "client_code": "DEMO-HARBOR",
+  "borrower_display_name": "Taylor Fiction",
+  "borrower_email": "taylor.fiction@example.com",
+  "balance_minor": 16425000,
+  "correspondence_text": "My credit report appears inconsistent with the bankruptcy status recorded on my mortgage. Please investigate the difference and respond through my authorized representative.",
+  "concerns": [
+    "Investigate the credit-reporting concern",
+    "Reconcile conflicting bankruptcy status evidence"
+  ],
+  "loan_context": {
+    "product": "fixed_mortgage",
+    "requester_role": "borrower",
+    "authorized_recipient": "counsel.demo@example.com",
+    "representative_name": "Demo Legal Representative",
+    "representation_verified": true,
+    "communication_restriction": "representative_only",
+    "servicing_bankruptcy_status": "discharged",
+    "servicing_status_source": "unverified_import",
+    "specialist_determination": null,
+    "operational_classification": null
+  },
+  "documents": [
+    {
+      "key": "court-record",
+      "title": "Synthetic court-status record",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "Fictional case DEMO-BK-004. Entry dated 16 September 2026: case dismissed without a discharge order.",
+        "This record is intentionally inconsistent with the unverified servicing import and requires a specialist determination.",
+        "No real court seal, court number, or legal finding is reproduced."
+      ],
+      "facts": {
+        "reported_status": "dismissed_without_discharge",
+        "record_date": "2026-09-16"
+      },
+      "declared_loan_identifier": null
+    },
+    {
+      "key": "representation",
+      "title": "Synthetic representation authorization",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "Taylor Fiction authorizes Demo Legal Representative to receive correspondence about this demonstration inquiry.",
+        "Authorized destination: counsel.demo@example.com. Direct borrower communication is restricted in this fixture."
+      ],
+      "facts": {
+        "representative_email": "counsel.demo@example.com",
+        "authorization_verified": true
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [
+    {
+      "key": "bankruptcy-review",
+      "task_type": "demo_bankruptcy_status_review",
+      "owner": "Demo Bankruptcy Team",
+      "status": "pending",
+      "pending_reason": "Court-status document conflicts with the servicing import.",
+      "request": {
+        "review_topic": "bankruptcy_status_and_communication_restrictions",
+        "production_task_code": null
+      },
+      "result": null,
+      "evidence_keys": [
+        "court-record",
+        "representation"
+      ]
+    }
+  ],
+  "version": "1",
+  "synthetic": true,
+  "loan_identifier": "0099000004",
+  "ccid": "DEMO-CC-004",
+  "original_received_at": "2026-09-20T10:30:00-04:00",
+  "evaluation_at": "2026-09-22T12:00:00-04:00"
+}

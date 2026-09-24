@@ -1,0 +1,94 @@
+{
+  "S01": {
+    "path": "docs/Process Steps.docx",
+    "scope": "Process and response/attachment controls"
+  },
+  "BRD:7.2": {
+    "path": "plan/Business_Requirements_Document.md",
+    "anchor": "72-corrected-handling-of-defective-samples-and-extracted-content",
+    "scope": "Explicit corrections to inconsistent sample responses"
+  },
+  "BRD:6.5": {
+    "path": "plan/Business_Requirements_Document.md",
+    "scope": "Response preparation, attachment and completion requirements"
+  },
+  "DEMO:client-configuration": {
+    "path": "data/fixtures/v1/clients.json",
+    "scope": "Fictional configuration; no production policy approval"
+  },
+  "S03": {
+    "path": "docs/Class - Sub Class.xlsx",
+    "sheet": "Sheet1",
+    "scope": "Rows 2-150, parent-qualified classification reference"
+  },
+  "S04": {
+    "path": "docs/Inquiry_Responses_Extracted_Pro.xlsx",
+    "sheet": "Extracted Data",
+    "scope": "Physical rows 2-528. Runtime contains only metadata and curated rewrites."
+  },
+  "S05": {
+    "path": "docs/Inquiry_Responses_Extracted_Pro.xlsx",
+    "sheet": "Summary",
+    "scope": "Historical metadata; reported 525 rows differs from actual 527"
+  },
+  "P01": {
+    "path": "docs/Borrower requesting document/Borrower Profile change not completed/Sample 1.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "P02": {
+    "path": "docs/Borrower requesting document/Borrower Profile change not completed/Sample 2.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "P03": {
+    "path": "docs/Borrower requesting document/Borrower Profile change not completed/Sample 3.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "D01": {
+    "path": "docs/Borrower requesting document/Borrower requesting document/Sample 1.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "D02": {
+    "path": "docs/Borrower requesting document/Borrower requesting document/Sample 2.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "D03": {
+    "path": "docs/Borrower requesting document/Borrower requesting document/Sample 3.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "T01": {
+    "path": "docs/Borrower requesting document/Borrower wants to confirm we are paying taxe/Sample 1.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "T02": {
+    "path": "docs/Borrower requesting document/Borrower wants to confirm we are paying taxe/Sample 2.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "T03": {
+    "path": "docs/Borrower requesting document/Borrower wants to confirm we are paying taxe/Sample 3.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "C01": {
+    "path": "docs/Borrower requesting document/Credit Reporting/Sample 1.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "C02": {
+    "path": "docs/Borrower requesting document/Credit Reporting/Sample 2.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "C03": {
+    "path": "docs/Borrower requesting document/Credit Reporting/Sample 3.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "L01": {
+    "path": "docs/Borrower requesting document/Loan Servicing/Sample 1.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "L02": {
+    "path": "docs/Borrower requesting document/Loan Servicing/Sample 2.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  },
+  "L03": {
+    "path": "docs/Borrower requesting document/Loan Servicing/Sample 3.docx",
+    "scope": "Historical reference only; original borrower details and screenshot content are not runtime fixtures."
+  }
+}

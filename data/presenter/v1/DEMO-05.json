@@ -1,0 +1,31 @@
+{
+  "scenario_id": "DEMO-05",
+  "documents": [
+    {
+      "key": "clarification",
+      "title": "Borrower reply – EFT clarification",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "Hello,",
+        "Thank you for the quick reply. I meant the escrow refund: I'd like the $486.27 surplus from my escrow statement deposited into my checking account instead of getting a paper check. My monthly payment can stay the way I pay it now.",
+        "What do you need from me to set that up?",
+        "Thanks,\nDanielle Foster\n(614) 555-0139"
+      ],
+      "facts": {
+        "eft_intent": "outgoing_refund",
+        "signed_refund_consent_received": false,
+        "reply_from": "danielle.foster@outlook.com",
+        "reply_subject": "Re: EFT instead of checks – loan ending 0005"
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [],
+  "loan_context_patch": {
+    "eft_intent": "outgoing_refund",
+    "refund_authorization": null
+  },
+  "version": "1",
+  "synthetic": true
+}

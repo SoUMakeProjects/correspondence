@@ -1,0 +1,68 @@
+{
+  "scenario_id": "DEMO-02",
+  "title": "Amortization schedule request – loan ending 0002",
+  "family": "document_request",
+  "client_code": "DEMO-NORTH",
+  "borrower_display_name": "Marcus J. Delgado",
+  "borrower_email": "marcus.j.delgado@outlook.com",
+  "balance_minor": 27402539,
+  "correspondence_text": "Hello,\n\nI'm working on our household budget for next year and would like to see exactly where we stand on the mortgage. Could you please send me a current amortization schedule for my loan, number 0099000002? I'm mainly looking for the remaining payments and how each one is split between principal and interest.\n\nThe property is 1847 Larkspur Lane, Westfield, NJ 07090. An emailed copy is fine; there's no need to mail a paper one.\n\nThank you for your help.\n\nBest regards,\nMarcus Delgado\n(908) 555-0147",
+  "concerns": [
+    "Borrower requests a current amortization schedule for the loan"
+  ],
+  "loan_context": {
+    "product": "fixed_mortgage",
+    "requester_role": "borrower",
+    "authorized_recipient": "marcus.j.delgado@outlook.com",
+    "communication_restriction": "none",
+    "borrower_phone": "(908) 555-0147",
+    "mailing_address": "1847 Larkspur Lane, Westfield, NJ 07090",
+    "property_address": "1847 Larkspur Lane, Westfield, NJ 07090",
+    "occupancy": "primary_residence",
+    "original_principal_minor": 31200000,
+    "note_date": "2020-03-27",
+    "term_months": 360,
+    "annual_rate_basis_points": 425,
+    "principal_interest_minor": 153485,
+    "remaining_payments": 283,
+    "first_payment_date": "2026-10-01",
+    "maturity_date": "2050-04-01",
+    "last_payment_received": "2026-09-01",
+    "escrow_included": false
+  },
+  "documents": [
+    {
+      "key": "amortization",
+      "title": "Loan Amortization Schedule",
+      "availability": "available",
+      "kind": "amortization_schedule",
+      "paragraphs": [
+        "This schedule shows the remaining scheduled monthly principal and interest payments on the loan identified above, beginning with the next payment due. It assumes each payment is received in full on its due date and that no additional principal payments are made.",
+        "Amounts shown are principal and interest only. Escrow deposits for property taxes and homeowners insurance, optional products, and any fees are not included, so your total monthly payment may be higher than the amount shown here.",
+        "Interest is calculated monthly at the note rate on the unpaid principal balance and rounded to the nearest cent. The final payment is adjusted so that the loan is paid in full.",
+        "This schedule is provided for information only. It is not a payoff statement and should not be used to pay off the loan. To request a payoff quote, contact Customer Care."
+      ],
+      "facts": {
+        "opening_principal_minor": 27402539,
+        "annual_rate_basis_points": 425,
+        "principal_interest_minor": 153485,
+        "remaining_payments": 283,
+        "first_payment_number": 78,
+        "first_payment_date": "2026-10-01",
+        "maturity_date": "2050-04-01",
+        "original_principal_minor": 31200000,
+        "note_date": "2020-03-27",
+        "term_months": 360,
+        "escrow_included": false
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [],
+  "version": "1",
+  "synthetic": true,
+  "loan_identifier": "0099000002",
+  "ccid": "DEMO-CC-002",
+  "original_received_at": "2026-09-18T10:30:00-04:00",
+  "evaluation_at": "2026-09-22T12:00:00-04:00"
+}

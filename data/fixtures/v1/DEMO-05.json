@@ -1,0 +1,102 @@
+{
+  "scenario_id": "DEMO-05",
+  "title": "EFT instead of checks – loan ending 0005",
+  "family": "loan_servicing",
+  "client_code": "DEMO-NORTH",
+  "borrower_display_name": "Danielle R. Foster",
+  "borrower_email": "danielle.foster@outlook.com",
+  "balance_minor": 9685449,
+  "correspondence_text": "Hello,\n\nI received my annual escrow account statement dated September 10. It says my escrow account has a surplus of $486.27 and that a check will be mailed to me, and that my monthly payment goes down to $1,562.96 starting November 1.\n\nCan you change this to an EFT instead? I'd rather not keep dealing with paper checks and waiting for them to clear. I've attached the statement.\n\nThanks,\nDanielle Foster\nLoan ending 0005\n(614) 555-0139",
+  "concerns": [
+    "Borrower asks to change \"this\" to an EFT without saying whether she means the escrow surplus refund, her monthly mortgage payment or a line-of-credit draw"
+  ],
+  "loan_context": {
+    "product": "fixed_mortgage",
+    "requester_role": "borrower",
+    "authorized_recipient": "danielle.foster@outlook.com",
+    "communication_restriction": "none",
+    "borrower_phone": "(614) 555-0139",
+    "mailing_address": "77 Birchwood Court, Westerville, OH 43081",
+    "property_address": "77 Birchwood Court, Westerville, OH 43081",
+    "occupancy": "primary_residence",
+    "original_principal_minor": 16500000,
+    "note_date": "2019-06-14",
+    "term_months": 180,
+    "annual_rate_basis_points": 350,
+    "principal_interest_minor": 117956,
+    "remaining_payments": 94,
+    "first_payment_date": "2026-10-01",
+    "maturity_date": "2034-07-01",
+    "last_payment_received": "2026-09-01",
+    "escrow_included": true,
+    "payment_method": "mailed_check",
+    "escrow_analysis_date": "2026-09-10",
+    "escrow_surplus_minor": 48627,
+    "escrow_refund_method": "check",
+    "escrow_monthly_deposit_minor": 38340,
+    "new_payment_minor": 156296,
+    "new_payment_effective_date": "2026-11-01",
+    "eft_intent": null,
+    "recurring_payment_enrollment": null,
+    "refund_authorization": null,
+    "draw_authorization": null
+  },
+  "documents": [
+    {
+      "key": "escrow-analysis",
+      "title": "Annual Escrow Account Disclosure Statement",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "Each year we review your escrow account to make sure there will be enough money to pay your property taxes and homeowners insurance, while keeping the cushion allowed by federal law (no more than one-sixth of the year's projected disbursements).",
+        "Your account has a surplus. Because the surplus is $50.00 or more, a refund check for the full surplus will be mailed to you within 30 days of the date of this statement. If your loan becomes past due before the refund is issued, the surplus may be kept in your escrow account instead.",
+        "Your new monthly payment begins with the payment due November 1, 2026. If you pay automatically through your bank's bill-pay service, please update the amount."
+      ],
+      "facts": {
+        "analysis_date": "2026-09-10",
+        "computation_start": "2026-11-01",
+        "computation_end": "2027-10-31",
+        "surplus_minor": 48627,
+        "refund_method": "check",
+        "refund_within_days": 30,
+        "current_escrow_minor": 42400,
+        "new_escrow_minor": 38340,
+        "principal_interest_minor": 117956,
+        "current_payment_minor": 160356,
+        "new_payment_minor": 156296,
+        "new_payment_effective_date": "2026-11-01",
+        "projected_disbursements": [
+          {
+            "month": "2027-01",
+            "payee": "Linden County Treasurer",
+            "description": "Real estate tax, first half",
+            "amount_minor": 170640
+          },
+          {
+            "month": "2027-03",
+            "payee": "Cardinal Shield Insurance Company",
+            "description": "Homeowners insurance premium",
+            "amount_minor": 118800
+          },
+          {
+            "month": "2027-06",
+            "payee": "Linden County Treasurer",
+            "description": "Real estate tax, second half",
+            "amount_minor": 170640
+          }
+        ],
+        "annual_disbursements_minor": 460080,
+        "required_cushion_minor": 76680,
+        "projected_low_balance_minor": 125307
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [],
+  "version": "1",
+  "synthetic": true,
+  "loan_identifier": "0099000005",
+  "ccid": "DEMO-CC-005",
+  "original_received_at": "2026-09-21T10:30:00-04:00",
+  "evaluation_at": "2026-09-22T12:00:00-04:00"
+}

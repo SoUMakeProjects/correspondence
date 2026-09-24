@@ -1,0 +1,131 @@
+{
+  "scenario_id": "DEMO-03",
+  "title": "Property tax bill – loan ending 0003",
+  "family": "tax_payment",
+  "client_code": "DEMO-HARBOR",
+  "borrower_display_name": "Priya S. Raman",
+  "borrower_email": "priya.raman@outlook.com",
+  "balance_minor": 21716615,
+  "correspondence_text": "Hello,\n\nWe bought our first home at 418 Hawthorne Ridge Road in April, and I just received the 2026 fourth-quarter real estate tax bill from Wrenfield Township. The installment is $2,350.00 and it is due October 30, 2026.\n\nMy understanding is that property taxes are paid from the escrow account on my mortgage, but this is the first tax bill since closing (the title company paid the third-quarter installment), so I want to be sure. Could you confirm that you have received this bill and that it will be paid from escrow before the due date? I've attached a copy of the bill.\n\nIf I need to pay it myself, please let me know soon so it isn't late.\n\nThank you,\nPriya Raman\nLoan 0099000003\n(610) 555-0163",
+  "concerns": [
+    "Borrower asks whether the servicer has received the 2026 fourth-quarter real estate tax bill",
+    "Borrower asks whether the installment will be paid from escrow before the October 30, 2026 due date"
+  ],
+  "loan_context": {
+    "product": "fixed_mortgage",
+    "requester_role": "borrower",
+    "authorized_recipient": "priya.raman@outlook.com",
+    "communication_restriction": "none",
+    "borrower_phone": "(610) 555-0163",
+    "mailing_address": "418 Hawthorne Ridge Road, Wrenfield, PA 19347",
+    "property_address": "418 Hawthorne Ridge Road, Wrenfield, PA 19347",
+    "occupancy": "primary_residence",
+    "original_principal_minor": 21800000,
+    "note_date": "2026-04-17",
+    "term_months": 360,
+    "annual_rate_basis_points": 625,
+    "principal_interest_minor": 134226,
+    "remaining_payments": 356,
+    "first_payment_date": "2026-10-01",
+    "maturity_date": "2056-05-01",
+    "last_payment_received": "2026-09-01",
+    "escrow_included": true,
+    "escrow_monthly_deposit_minor": 89833,
+    "escrow_balance_minor": 318466,
+    "tax_escrow_responsibility": true,
+    "tax_parcel_id": "34-12-071-400",
+    "tax_bill_number": "2026-RE-04417",
+    "tax_bill_received_at": "2026-09-18T14:30:00Z",
+    "tax_period": "2026 fourth-quarter real estate tax",
+    "tax_payee": "Wrenfield Township Tax Collector",
+    "tax_amount_minor": 235000,
+    "tax_due_date": "2026-10-30",
+    "tax_status": "scheduled",
+    "tax_scheduled_date": "2026-10-27",
+    "tax_paid_at": null,
+    "tax_payment_reference": null
+  },
+  "documents": [
+    {
+      "key": "tax-bill",
+      "title": "2026 Real Estate Tax Bill – 4th Quarter Installment",
+      "availability": "available",
+      "kind": "document",
+      "paragraphs": [
+        "If your taxes are paid through a mortgage escrow account, a copy of this bill has been sent to the mortgage company shown above. Do not pay this installment yourself if your mortgage company will pay it, to avoid a double payment.",
+        "Make checks payable to Wrenfield Township Tax Collector and return the stub below with your payment. Write the bill number on your check. Receipts are available on request.",
+        "Installments not received by the due date are subject to a 10% penalty. Postmarks are not accepted as proof of timely payment.",
+        "Questions about your assessment should be directed to the Juniper County Board of Assessment Appeals. Questions about this bill should be directed to the Tax Collector."
+      ],
+      "facts": {
+        "tax_period": "2026 fourth-quarter real estate tax",
+        "amount_minor": 235000,
+        "due_date": "2026-10-30",
+        "payee": "Wrenfield Township Tax Collector",
+        "bill_number": "2026-RE-04417",
+        "parcel_id": "34-12-071-400",
+        "block": "1207",
+        "lot": "14",
+        "billing_period_start": "2026-10-01",
+        "billing_period_end": "2026-12-31",
+        "issued_date": "2026-09-10",
+        "installment_number": 4,
+        "installment_count": 4,
+        "assessed_value_minor": 23500000,
+        "annual_tax_minor": 940000,
+        "levies": [
+          {
+            "name": "Juniper County",
+            "mills": "9.60",
+            "annual_minor": 225600,
+            "installment_minor": 56400
+          },
+          {
+            "name": "Wrenfield Township",
+            "mills": "5.60",
+            "annual_minor": 131600,
+            "installment_minor": 32900
+          },
+          {
+            "name": "Wrenfield Area School District",
+            "mills": "24.80",
+            "annual_minor": 582800,
+            "installment_minor": 145700
+          }
+        ],
+        "owner_name": "Priya S. Raman",
+        "property_address": "418 Hawthorne Ridge Road, Wrenfield, PA 19347",
+        "mortgage_company": "Harbor Point Mortgage Services",
+        "collector_name": "Denise M. Kowalczyk",
+        "collector_address": "Wrenfield Township Municipal Building, 200 Township Line Road, Wrenfield, PA 19347",
+        "collector_phone": "(610) 555-0129",
+        "collector_hours": "Monday through Thursday, 9:00 a.m. to 4:00 p.m."
+      },
+      "declared_loan_identifier": null
+    }
+  ],
+  "tasks": [
+    {
+      "key": "tax-tracking",
+      "task_type": "demo_tax_schedule_review",
+      "owner": "Demo Tax Team",
+      "status": "pending",
+      "pending_reason": "Fourth-quarter installment is scheduled for disbursement from escrow and has not been paid yet.",
+      "request": {
+        "tax_period": "2026 fourth-quarter real estate tax",
+        "amount_minor": 235000,
+        "scheduled_date": "2026-10-27"
+      },
+      "result": null,
+      "evidence_keys": [
+        "tax-bill"
+      ]
+    }
+  ],
+  "version": "1",
+  "synthetic": true,
+  "loan_identifier": "0099000003",
+  "ccid": "DEMO-CC-003",
+  "original_received_at": "2026-09-19T10:30:00-04:00",
+  "evaluation_at": "2026-09-22T12:00:00-04:00"
+}

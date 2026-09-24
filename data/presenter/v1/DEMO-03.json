@@ -1,0 +1,35 @@
+{
+  "scenario_id": "DEMO-03",
+  "documents": [],
+  "tasks": [
+    {
+      "key": "tax-tracking",
+      "task_type": "demo_tax_schedule_review",
+      "owner": "Demo Tax Team",
+      "status": "completed",
+      "pending_reason": null,
+      "request": {
+        "tax_period": "2026 fourth-quarter real estate tax",
+        "amount_minor": 235000
+      },
+      "result": {
+        "reference": "TAX-REV-260922-003",
+        "reviewed_at": "2026-09-22T13:15:00Z",
+        "reviewed_by": "Marisol Vega, Tax Team",
+        "confirmed_status": "scheduled",
+        "scheduled_date": "2026-10-27",
+        "paid_at": null,
+        "note": "Bill 2026-RE-04417 matches the tax line on file for parcel 34-12-071-400 (payee, amount $2,350.00, due October 30, 2026). Disbursement from escrow is scheduled for October 27, 2026; not yet paid.",
+        "simulated": true
+      },
+      "evidence_keys": [
+        "tax-bill"
+      ]
+    }
+  ],
+  "loan_context_patch": {
+    "tax_schedule_verified_by": "TAX-REV-260922-003"
+  },
+  "version": "1",
+  "synthetic": true
+}
