@@ -18,6 +18,8 @@ try {
     }
     & $pythonPath -m app.cli migrate
     if ($LASTEXITCODE -ne 0) { throw 'Database migration failed.' }
+    & $pythonPath -c "import sys; from app.documents import library_problems; p = library_problems(); sys.exit(('Synthetic PDFs were altered by Git line-ending conversion (' + str(len(p)) + ' files). Run: git rm -r -q --cached data; git reset --hard') if p else 0)"
+    if ($LASTEXITCODE -ne 0) { throw 'Synthetic document library check failed.' }
     Write-Output 'Setup complete. Existing .env values were preserved.'
 } finally {
     Pop-Location

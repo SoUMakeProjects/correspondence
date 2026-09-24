@@ -1,3 +1,4 @@
+import logging
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from typing import Annotated
@@ -73,6 +74,16 @@ def create_app(settings: Settings | None = None, *, agent_model=None, start_work
     async def lifespan(application: FastAPI) -> AsyncIterator[None]:
         settings.data_dir.mkdir(parents=True, exist_ok=True)
         (settings.data_dir / "documents").mkdir(exist_ok=True)
+        from app.documents import library_problems
+
+        if problems := library_problems():
+            logging.getLogger(__name__).error(
+                "%d synthetic document(s) fail their manifest hash (e.g. %s). Mailbox cases "
+                "cannot be created. On Windows this is usually Git CRLF conversion: see README "
+                "'Cloning on Windows'.",
+                len(problems),
+                problems[0],
+            )
         engine = make_engine(settings.database_url)
         worker = None
         automation = None

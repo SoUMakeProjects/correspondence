@@ -1458,8 +1458,27 @@ def library_document(scenario: str, variant: str, key: str) -> tuple[dict, bytes
         raise ValueError("Document manifest path leaves the synthetic library.")
     content = path.read_bytes()
     if hashlib.sha256(content).hexdigest() != entry["sha256"]:
-        raise ValueError("Synthetic document library hash mismatch. Rebuild the document library.")
+        raise DomainError(
+            500,
+            "document_library_corrupt",
+            f"Synthetic document {entry['storage_key']} does not match its recorded hash. "
+            "If this checkout came from Git on Windows, line-ending conversion altered the "
+            "PDFs: re-checkout data/ with the repository .gitattributes (see README).",
+        )
     return entry, content
+
+
+def library_problems() -> list[str]:
+    """Storage keys of synthetic documents whose bytes differ from the manifest."""
+    root = (DATA_ROOT / "documents/v1").resolve()
+    problems = []
+    for row in read_json(DATA_ROOT / "documents/v1/manifest.json"):
+        if not row["storage_key"]:
+            continue
+        path = root / row["storage_key"]
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != row["sha256"]:
+            problems.append(row["storage_key"])
+    return problems
 
 
 def document_path(data_dir: Path, evidence: Evidence) -> Path:

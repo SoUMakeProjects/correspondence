@@ -1,0 +1,19 @@
+# Keep synthetic documents byte-exact on every OS. Their SHA-256 hashes are
+# verified at runtime (data/documents/v1/manifest.json); CRLF conversion on
+# Windows checkouts would break case creation.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.woff2 binary
+*.docx  binary
+*.xlsx  binary
+*.sqlite3 binary
+
+# Fixture/knowledge data is also hashed or fingerprinted; never convert it.
+data/** -text
+
+# PowerShell scripts run fine with CRLF; everything else stays LF.
+*.ps1 text eol=crlf

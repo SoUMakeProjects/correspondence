@@ -54,6 +54,18 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\seed-demo.ps1
 
 Running that command again reuses its initial cases. Add `-Fresh` to create another set while preserving history. Load an individual variant with, for example, `-Scenario DEMO-02 -Variant wrong_loan -Fresh`. Available scenarios and variant behavior are documented in [the data guide](data/README.md).
 
+### Cloning on Windows
+
+No database needs to be installed: the backend creates and migrates `.local/correspondence.sqlite3` (SQLite) on startup. The synthetic PDFs under `data/documents/` are verified by SHA-256, so Git must not convert their line endings. The repository `.gitattributes` prevents this. If you cloned before it existed (symptom: sending a draft never creates a case, and the backend logs `synthetic document(s) fail their manifest hash`), refresh the files from the repository root and restart the backend:
+
+```powershell
+git pull
+git rm -r -q --cached data
+git reset --hard
+```
+
+Alternatively clone with `git clone -c core.autocrlf=false …`. Azure settings in `.env` are also required for the agent to run; `.env` is never committed, so copy your values to the new machine.
+
 ## Azure Foundry configuration
 
 The root `.env` contains your Azure settings. [.env.example](.env.example) documents the fields; `.env` is ignored and setup preserves it. Credentials stay on the backend.
