@@ -192,7 +192,7 @@ def test_handoff_requires_current_acknowledgment_and_never_closes(client):
     )
     assessment = client.get(f"/api/cases/{case['id']}/assessment").json()
     assert any(f["code"] == "classification_mapping_missing" for f in assessment["findings"])
-    assert assessment["authorized_recipient"] == "counsel.demo@example.com"
+    assert assessment["authorized_recipient"] == "monica.ferrante@ferrantehale.example.com"
     assert assessment["concerns"][0]["disposition"] == "referred"
     assert not client.get(f"/api/cases/{case['id']}/completion-check").json()["valid"]
 
@@ -216,7 +216,10 @@ def test_authority_variant_and_representative_destination(client):
     draft = new_response(client, case)
     complete(client, case, draft)
     saved = client.get(f"/api/cases/{case['id']}/artifacts").json()
-    assert saved["outbox"][0]["sent_content"]["recipient"] == "delegate.demo@example.com"
+    assert (
+        saved["outbox"][0]["sent_content"]["recipient"]
+        == "elena.ruiz@brightpathhousing.example.org"
+    )
 
 
 def test_representative_input_cannot_reverse_cease_and_desist(client, application):

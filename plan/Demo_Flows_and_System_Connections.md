@@ -171,34 +171,36 @@ The separate **Diagnostics workspace** can start with the schedule missing, unre
 
 This walkthrough covers a town-tax bill. The separate school-tax and tax-record update branches remain future work.
 
-## 7. DEMO-04 — Credit-reporting concern with conflicting bankruptcy information
+## 7. DEMO-04 — Credit-reporting dispute with conflicting bankruptcy information
 
-**Borrower's concern:** A credit-reporting question depends on the correct bankruptcy position.
+**The request:** Monica A. Ferrante, the attorney for borrower Gregory P. Lindqvist, writes: his Chapter 13 case was dismissed on July 14, 2026 without a discharge, but his credit report shows the mortgage as "discharged in bankruptcy". She disputes the reporting, asks for a written response and asks the servicer not to contact her client directly.
 
-**Starting situation:** One document and another record disagree about the bankruptcy status. An existing specialist task is available, and contact is restricted to the authorized representative.
+**Starting situation:** The court's dismissal order and the servicer's own bankruptcy marker ("discharged", from an unverified import) disagree. An existing Bankruptcy Team task is pending. The borrower's signed authorization restricts contact to his attorney.
 
 ### Expected flow
 
-1. The AI reads the concern, loan records, conflicting documents and existing specialist task.
-2. It identifies the conflict and records a specialist handoff. It keeps the contact restriction in place.
-3. In **ILS**, the presenter reviews and records the prepared bankruptcy specialist result on the same case.
-4. The agent automatically reads the supplied result and updates the supported handoff while retaining any unresolved category or policy issue.
-5. The presenter acts as the receiving specialist and acknowledges the current handoff.
-6. Acknowledgment automatically continues the agent's verification. The case becomes transferred. The handoff and remaining concerns stay visible.
+1. The AI reads the email, the loan records, the court order, the authorization and the existing Bankruptcy Team task.
+2. It identifies the conflict and keeps the contact restriction in place. It does not decide which status is right.
+3. It prepares a written **acknowledgment to the attorney**: the dispute and documents were received, her client will not be contacted directly, the dispute has been referred to the bankruptcy and credit reporting specialists, and a written response will follow by October 21, 2026. The letter says plainly that it is not the result of the investigation. It says nothing about how the account is reported, corrections or liability.
+4. The reviewer approves that exact version (Harbor Point reviews every letter). Approval automatically continues processing: secure mail sends it to the attorney only, OnBase saves it and ILS records the note.
+5. The AI records a handoff to Compliance with an internal routing note, and the case waits on that department.
+6. In **ILS**, the presenter records the prepared Bankruptcy Team result. It confirms the dismissal and corrects the servicing marker, and says the credit reporting question belongs to Compliance.
+7. The agent automatically reads the result and records a current handoff that cites it. It sends no second letter, because Compliance owns the written response.
+8. The presenter acts as the Compliance recipient and acknowledges the current handoff. Acknowledgment automatically continues the agent's verification. The case becomes transferred, and the handoff and remaining concerns stay visible.
 
 ### Connection to the systems
 
 | System | What happens |
 | --- | --- |
-| CCT | Records the conflict, responsible team, handoff and acknowledged transfer. |
-| ILS | Provides the existing specialist task and receives the prepared specialist result. |
-| OnBase | Supplies the available supporting documents used to check the conflict. |
-| Secure mail | No outgoing response is needed for this handoff walkthrough. Any response that is prepared must still obey the representative and review rules. |
-| Specialist | Supplies the determination and acknowledges responsibility for the referred work. The presenter simulates these actions. |
+| CCT | Records the dispute, the Compliance route, both handoffs with their routing notes and the acknowledged transfer. |
+| ILS | Provides the existing Bankruptcy Team task and receives its result. Holds the corrected bankruptcy marker and the note for the acknowledgment. |
+| OnBase | Supplies the court order and the authorization, and keeps the acknowledgment package. |
+| Secure mail | Sends exactly one letter, the acknowledgment, to the attorney. Nothing goes to the borrower's own address. |
+| Reviewer and specialists | The reviewer approves the acknowledgment. The Bankruptcy Team supplies the determination. Compliance acknowledges responsibility for the referred work. The presenter simulates these actions. |
 
-**Expected final result:** **Transferred**, with the specialist task reused and remaining concerns tracked. The case is not closed as fully resolved.
+**Expected final result:** **Transferred**, with the specialist task reused, one acknowledgment to counsel and the remaining concerns tracked. The case is not closed as fully resolved.
 
-**What this demonstrates:** Conflicting evidence leads to a controlled referral, and an acknowledged handoff clearly records who owns the next step.
+**What this demonstrates:** Conflicting evidence leads to a controlled referral, not a decision. The attorney is answered promptly and only within what the records support, and an acknowledged handoff clearly records who owns the next step.
 
 ## 8. DEMO-05 — Borrower asks an unclear EFT question
 
@@ -265,7 +267,7 @@ The **Agent activity** run summary shows completed actions, failures, pending co
 | DEMO-01: Name change | Waiting on department | The update is recorded; a supervisor still needs to resolve the case-category gap. |
 | DEMO-02: Amortization schedule | Closed | The correct document was delivered, saved and noted; completion checks passed. |
 | DEMO-03: Tax inquiry | Closed | The current approved answer was delivered and all required records were completed. |
-| DEMO-04: Bankruptcy conflict | Transferred | The receiving specialist acknowledged responsibility; unresolved concerns remain tracked. |
+| DEMO-04: Bankruptcy conflict | Transferred | Counsel received one acknowledgment; Compliance acknowledged responsibility; unresolved concerns remain tracked. |
 | DEMO-05: EFT clarification | Waiting for borrower | The purpose is known, but authorization or instructions are still missing. |
 | Delivery succeeded, indexing failed | Open until recovery finishes | A delivery alone does not complete the records or justify closure. |
 | Send or task result is uncertain | Blocked until verified | The app must establish what the relevant system actually saved before continuing. |

@@ -1,0 +1,39 @@
+CCT specialist handoffs – loan 0099000004
+
+Handoff 1: Compliance → Compliance Team
+Status: requested
+
+Referral to Compliance – Compliance Team
+Loan 0099000004 · Gregory P. Lindqvist · Case DEMO-CC-004 · received September 21, 2026
+Reason: Alleged credit-reporting or specific modification error: Customer Upset / Compliance.
+Bankruptcy: Court order in Chapter 13 case No. 24-10382 shows the case dismissed on July 14, 2026 without a discharge. Servicing marker shows "discharged" (unverified import, August 3, 2026). Bankruptcy Team review pending.
+Contact: representative only – Monica A. Ferrante, Ferrante & Hale, LLC <monica.ferrante@ferrantehale.example.com>. Do not contact the borrower directly.
+Acknowledgment delivered to monica.ferrante@ferrantehale.example.com (DEMO-DELIVERY-6a6d142b-ef6e-4b2a-a0cd-f01b8f5eac88); written response promised by October 21, 2026.
+Open items:
+- Counsel disputes the credit reporting of the mortgage account as discharged in bankruptcy (pending department; owner Bankruptcy Team)
+- Reconcile the court's dismissal order (no discharge) with the discharged bankruptcy status in servicing records (pending department; owner Bankruptcy Team)
+Closure blocked until resolved:
+- No approved operational mapping for this request. Preserve the topic and seek classification review.
+- Reconcile the court dismissal and imported discharge with the existing bankruptcy specialist task.
+
+------------------------------------------------------------------------
+
+Handoff 2: Compliance → Compliance Team
+Status: acknowledged by Compliance – credit reporting disputes
+
+Referral to Compliance – Compliance Team
+Loan 0099000004 · Gregory P. Lindqvist · Case DEMO-CC-004 · received September 21, 2026
+Reason: Alleged credit-reporting or specific modification error: Customer Upset / Compliance.
+Bankruptcy: Court order in Chapter 13 case No. 24-10382 shows the case dismissed on July 14, 2026 without a discharge. Bankruptcy Team determination BK-REV-260922-004: dismissed without discharge; the servicing marker has been corrected.
+Contact: representative only – Monica A. Ferrante, Ferrante & Hale, LLC <monica.ferrante@ferrantehale.example.com>. Do not contact the borrower directly.
+Acknowledgment delivered to monica.ferrante@ferrantehale.example.com (DEMO-DELIVERY-6a6d142b-ef6e-4b2a-a0cd-f01b8f5eac88); written response promised by October 21, 2026.
+Open items:
+- Counsel disputes the credit reporting of the mortgage account as discharged in bankruptcy (referred; owner Compliance Team)
+- Reconcile the court's dismissal order (no discharge) with the discharged bankruptcy status in servicing records (referred; owner Compliance Team)
+Closure blocked until resolved:
+- No approved operational mapping for this request. Preserve the topic and seek classification review.
+
+Acknowledgment:
+Received by Compliance – credit reporting disputes for the Compliance Team. The Compliance Team accepts ownership of 2 open items in this referral; the case is transferred and stays open until they are resolved.
+
+------------------------------------------------------------------------

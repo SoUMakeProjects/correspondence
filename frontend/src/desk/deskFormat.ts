@@ -12,6 +12,8 @@ export type DeskDraft = {
   review_required: boolean;
   recipient: string;
   body: string;
+  /** Bold [start, end) spans into body, derived server-side by fixed template rules. */
+  emphasis?: [number, number][];
   candidate: Pick<
     DraftEdit,
     "response_type" | "claims" | "concerns" | "attachment_ids"

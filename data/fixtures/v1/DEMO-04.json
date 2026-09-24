@@ -1,56 +1,129 @@
 {
   "scenario_id": "DEMO-04",
-  "title": "Credit-reporting concern with conflicting bankruptcy records",
+  "title": "Credit reporting dispute – Chapter 13 dismissal – loan ending 0004",
   "family": "credit_reporting",
   "client_code": "DEMO-HARBOR",
-  "borrower_display_name": "Taylor Fiction",
-  "borrower_email": "taylor.fiction@example.com",
-  "balance_minor": 16425000,
-  "correspondence_text": "My credit report appears inconsistent with the bankruptcy status recorded on my mortgage. Please investigate the difference and respond through my authorized representative.",
+  "borrower_display_name": "Gregory P. Lindqvist",
+  "borrower_email": "greg.lindqvist@outlook.com",
+  "balance_minor": 15908265,
+  "correspondence_text": "To Harbor Point Mortgage Services:\n\nThis firm represents your borrower, Gregory P. Lindqvist, regarding the mortgage loan on his home at 1146 Quarry Hill Road, Ashby Mill, DE 19707 (loan number 0099000004). Mr. Lindqvist's signed authorization is attached. Please direct all communication about this loan to me and do not contact Mr. Lindqvist directly.\n\nMr. Lindqvist filed a Chapter 13 case in the United States Bankruptcy Court for the District of Brandywine, Case No. 24-10382. The court dismissed that case on July 14, 2026. No discharge was entered. A copy of the order dismissing the case is attached.\n\nMr. Lindqvist's September credit report shows your mortgage account as discharged in bankruptcy. That does not match the court record. We dispute the accuracy of this reporting. Please investigate, correct your records as needed, and send me a written response with the results of your investigation.\n\nSincerely,\n\nMonica A. Ferrante\nFerrante & Hale, LLC\nAttorney for Gregory P. Lindqvist\n(302) 555-0148",
   "concerns": [
-    "Investigate the credit-reporting concern",
-    "Reconcile conflicting bankruptcy status evidence"
+    "Counsel disputes the credit reporting of the mortgage account as discharged in bankruptcy",
+    "Reconcile the court's dismissal order (no discharge) with the discharged bankruptcy status in servicing records"
   ],
   "loan_context": {
     "product": "fixed_mortgage",
     "requester_role": "borrower",
-    "authorized_recipient": "counsel.demo@example.com",
-    "representative_name": "Demo Legal Representative",
+    "authorized_recipient": "monica.ferrante@ferrantehale.example.com",
+    "representative_name": "Monica A. Ferrante",
+    "representative_firm": "Ferrante & Hale, LLC",
+    "representative_phone": "(302) 555-0148",
     "representation_verified": true,
     "communication_restriction": "representative_only",
+    "borrower_phone": "(302) 555-0176",
+    "mailing_address": "1146 Quarry Hill Road, Ashby Mill, DE 19707",
+    "property_address": "1146 Quarry Hill Road, Ashby Mill, DE 19707",
+    "occupancy": "primary_residence",
+    "original_principal_minor": 18500000,
+    "note_date": "2019-05-24",
+    "term_months": 360,
+    "annual_rate_basis_points": 425,
+    "principal_interest_minor": 91009,
+    "remaining_payments": 273,
+    "first_payment_date": "2026-10-01",
+    "maturity_date": "2049-06-01",
+    "last_payment_received": "2026-09-01",
+    "escrow_included": true,
+    "bankruptcy_case_number": "24-10382",
+    "bankruptcy_chapter": 13,
+    "bankruptcy_court": "United States Bankruptcy Court for the District of Brandywine",
+    "bankruptcy_filed_date": "2024-02-12",
     "servicing_bankruptcy_status": "discharged",
     "servicing_status_source": "unverified_import",
+    "servicing_status_imported_at": "2026-08-03",
     "specialist_determination": null,
     "operational_classification": null
   },
   "documents": [
     {
       "key": "court-record",
-      "title": "Synthetic court-status record",
+      "title": "Order Dismissing Chapter 13 Case – No. 24-10382",
       "availability": "available",
       "kind": "document",
       "paragraphs": [
-        "Fictional case DEMO-BK-004. Entry dated 16 September 2026: case dismissed without a discharge order.",
-        "This record is intentionally inconsistent with the unverified servicing import and requires a specialist determination.",
-        "No real court seal, court number, or legal finding is reproduced."
+        "Upon consideration of the Chapter 13 Trustee's Motion to Dismiss for failure to make payments under the confirmed plan (Docket No. 81), and after notice and a hearing held on July 9, 2026, at which the Debtor did not cure the default, it is hereby ORDERED that:",
+        "1. This Chapter 13 case is DISMISSED.",
+        "2. The Debtor has not received a discharge in this case, and no order of discharge shall be entered.",
+        "3. Any order directing an employer to deduct plan payments from the Debtor's wages is terminated.",
+        "4. The Chapter 13 Trustee shall file a final report and account. The Court retains jurisdiction to consider the Trustee's final report and any timely application for compensation."
       ],
       "facts": {
         "reported_status": "dismissed_without_discharge",
-        "record_date": "2026-09-16"
+        "record_date": "2026-07-14",
+        "case_number": "24-10382",
+        "chapter": 13,
+        "court": "United States Bankruptcy Court",
+        "district": "District of Brandywine",
+        "debtor_name": "Gregory P. Lindqvist",
+        "debtor_ssn_last4": "6612",
+        "filed_date": "2024-02-12",
+        "plan_confirmed_date": "2024-05-08",
+        "motion_docket_number": 81,
+        "hearing_date": "2026-07-09",
+        "order_docket_number": 88,
+        "discharge_entered": false,
+        "judge": "Eleanor V. Marsh",
+        "trustee": "Thomas R. Keating",
+        "debtor_attorney": "Monica A. Ferrante, Ferrante & Hale, LLC",
+        "docket": [
+          {
+            "number": 1,
+            "date": "2024-02-12",
+            "text": "Voluntary petition under Chapter 13 filed by Gregory P. Lindqvist."
+          },
+          {
+            "number": 34,
+            "date": "2024-05-08",
+            "text": "Order confirming Chapter 13 plan."
+          },
+          {
+            "number": 81,
+            "date": "2026-06-02",
+            "text": "Chapter 13 Trustee's motion to dismiss case for failure to make plan payments."
+          },
+          {
+            "number": 86,
+            "date": "2026-07-09",
+            "text": "Hearing held on motion to dismiss (Docket No. 81). Default not cured."
+          },
+          {
+            "number": 88,
+            "date": "2026-07-14",
+            "text": "Order dismissing Chapter 13 case. No discharge entered."
+          }
+        ]
       },
       "declared_loan_identifier": null
     },
     {
       "key": "representation",
-      "title": "Synthetic representation authorization",
+      "title": "Authorization to Communicate Through Counsel",
       "availability": "available",
       "kind": "document",
       "paragraphs": [
-        "Taylor Fiction authorizes Demo Legal Representative to receive correspondence about this demonstration inquiry.",
-        "Authorized destination: counsel.demo@example.com. Direct borrower communication is restricted in this fixture."
+        "I, Gregory P. Lindqvist, am the borrower on the mortgage loan identified above. I have retained Ferrante & Hale, LLC to represent me regarding this loan, including my dispute of how the loan is reported to the consumer reporting agencies following the dismissal of my Chapter 13 case.",
+        "I authorize Harbor Point Mortgage Services to discuss this loan with my attorney, Monica A. Ferrante, and to release to her any information about the loan that she requests. I ask that you send all correspondence about this loan to my attorney at the email address below and that you do not contact me directly while I am represented.",
+        "This authorization remains in effect until I revoke it in writing."
       ],
       "facts": {
-        "representative_email": "counsel.demo@example.com",
+        "representative_name": "Monica A. Ferrante",
+        "representative_firm": "Ferrante & Hale, LLC",
+        "representative_email": "monica.ferrante@ferrantehale.example.com",
+        "representative_phone": "(302) 555-0148",
+        "firm_address": "1200 Market Row, Suite 410, Colesbury, DE 19709",
+        "borrower_name": "Gregory P. Lindqvist",
+        "signed_date": "2026-09-18",
+        "scope": "All communication about the loan, including the credit reporting dispute",
         "authorization_verified": true
       },
       "declared_loan_identifier": null
@@ -62,9 +135,10 @@
       "task_type": "demo_bankruptcy_status_review",
       "owner": "Demo Bankruptcy Team",
       "status": "pending",
-      "pending_reason": "Court-status document conflicts with the servicing import.",
+      "pending_reason": "The order dismissing Chapter 13 case No. 24-10382 (no discharge) conflicts with the \"discharged\" bankruptcy marker from the August 3, 2026 import.",
       "request": {
         "review_topic": "bankruptcy_status_and_communication_restrictions",
+        "bankruptcy_case_number": "24-10382",
         "production_task_code": null
       },
       "result": null,
@@ -78,6 +152,6 @@
   "synthetic": true,
   "loan_identifier": "0099000004",
   "ccid": "DEMO-CC-004",
-  "original_received_at": "2026-09-20T10:30:00-04:00",
+  "original_received_at": "2026-09-21T09:12:00-04:00",
   "evaluation_at": "2026-09-22T12:00:00-04:00"
 }

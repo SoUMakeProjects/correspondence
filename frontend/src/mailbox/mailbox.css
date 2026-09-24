@@ -1762,3 +1762,9 @@ button.mail-attachment:hover {
   outline: 2px solid #0078d4;
   outline-offset: 2px;
 }
+
+/* Server-derived emphasis in letters from the servicer (backend app/letter_emphasis.py). */
+.letter-emphasis {
+  font-weight: 650;
+  color: inherit;
+}

@@ -1,10 +1,6 @@
 import type { SystemCase } from "./api/client";
-import {
-  clientName,
-  displayLabel,
-  displayText,
-  displayValue,
-} from "./presentation";
+import { LetterText } from "./LetterText";
+import { clientName, displayLabel, displayValue } from "./presentation";
 
 type Row = Record<string, unknown>;
 export const label = (value: unknown) => {
@@ -122,7 +118,7 @@ export function SecureMailView({ data }: { data: SystemCase }) {
               </p>
               <time>{when(entry.created_at)} · Eastern time</time>
               <pre className="response-preview">
-                {displayText(content.body)}
+                <LetterText body={content.body} emphasis={content.emphasis} />
               </pre>
               {((content.attachments as Row[]) ?? []).map((a) => (
                 <span className="attachment-chip" key={String(a.evidence_id)}>

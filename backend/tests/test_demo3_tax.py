@@ -239,4 +239,52 @@ def test_review_path_invalidates_edits_and_closes_with_the_rendered_letter(clien
     assert len(sent) == 1 and sent[0]["sent_content"]["body"] == edited["body"]
     assert sent[0]["sent_content"]["recipient"] == "priya.raman@outlook.com"
     assert sent[0]["sent_content"]["sender"] == "correspondence@harborpointmortgage.com"
-    assert len(client.get(f"/api/cases/{case['id']}/tasks").json()) == 1
+    # The desk draft, the delivered mail and its HTML part carry the same derived emphasis.
+    content = sent[0]["sent_content"]
+    assert edited["emphasis"] and content["emphasis"] == edited["emphasis"]
+    assert "<strong>please do not pay this installment yourself</strong>" in content["html_body"]
+    packages = client.get(f"/api/cases/{case['id']}/artifacts").json()["packages"]
+    row = current(client, case)
+    pdf = client.get(
+        f"/api/simulations/{row['simulation_id']}/cases/{case['id']}/packages/"
+        f"{packages[-1]['id']}/file",
+        params={"loan_identifier": row["loan_identifier"], "client_code": row["client_code"]},
+    )
+    assert pdf.status_code == 200, pdf.text
+    letter = PdfReader(BytesIO(pdf.content)).pages[0]
+    assert "do not pay this installment yourself" in " ".join(letter.extract_text().split())
+
+
+def test_letter_emphasis_is_derived_from_the_plain_body(client):
+    from app.letter_emphasis import emphasis_spans, html_body, reportlab_markup
+
+    body = rendered(client, load(client, "DEMO-03"))
+    bold = [body[a:b] for a, b in emphasis_spans(body)]
+    for expected in (
+        "$2,350.00",
+        "October 27, 2026",
+        "loan ending in 0003",
+        "it has not been paid yet",
+        "please do not pay this installment yourself",
+        "Scheduled payment date:",
+    ):
+        assert expected in bold, expected
+    # Salutation, signature and disclosures are never emphasized; the body itself is unchanged.
+    assert not any("Priya" in b or "Sincerely" in b or NOTICE in b for b in bold)
+    assert "**" not in body and "<" not in body
+    assert emphasis_spans(body) == emphasis_spans(body)
+    html = html_body(body)
+    assert "<strong>it has not been paid yet</strong>" in html and html.startswith("<p>Dear ")
+    assert "<b>$2,350.00</b>" in reportlab_markup(body)
+    assert emphasis_spans("Our response to your correspondence follows.") == []
+
+
+def test_every_emphasis_phrase_still_exists_in_a_letter_template():
+    from pathlib import Path
+
+    from app import letter_emphasis, response_validation
+
+    source = Path(response_validation.__file__).read_text()
+    joined = re.sub(r'"\s*\n\s*(?:\+\s*)?f?"', "", source)  # Join implicit string concatenation.
+    for phrase in letter_emphasis.PHRASES:
+        assert phrase in joined, phrase

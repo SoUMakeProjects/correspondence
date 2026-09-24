@@ -1318,6 +1318,492 @@ def render_email_printout(fixture, document, variant: str) -> bytes:
     return buffer.getvalue()
 
 
+def _plain_table(rows, widths, font="Times-Roman", size=10.5, bold_first=True, ink=None):
+    table = Table(rows, colWidths=widths, hAlign="LEFT")
+    style = [
+        ("FONTNAME", (0, 0), (-1, -1), font),
+        ("FONTSIZE", (0, 0), (-1, -1), size),
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 1.5),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+    ]
+    if bold_first:
+        style.append(("FONTNAME", (0, 0), (0, -1), font.split("-")[0] + "-Bold"))
+    if ink is not None:
+        style.append(("TEXTCOLOR", (0, 0), (-1, -1), ink))
+    table.setStyle(TableStyle(style))
+    return table
+
+
+def render_court_order(fixture, document, variant: str) -> bytes:
+    """Order dismissing a Chapter 13 case (fictional court and district) with a docket excerpt."""
+    from reportlab.lib.enums import TA_CENTER
+    from reportlab.lib.styles import ParagraphStyle
+
+    facts = document.facts
+    ink, muted, rule = (
+        colors.HexColor("#1b1b1b"),
+        colors.HexColor("#5a5a5a"),
+        colors.HexColor("#444444"),
+    )
+    base = getSampleStyleSheet()
+    body = ParagraphStyle(
+        "order",
+        parent=base["Normal"],
+        fontName="Times-Roman",
+        fontSize=11,
+        leading=15,
+        textColor=ink,
+        spaceAfter=6,
+    )
+    center = ParagraphStyle("center", parent=body, alignment=TA_CENTER, spaceAfter=0)
+    court = ParagraphStyle("court", parent=center, fontName="Times-Bold", fontSize=13, leading=17)
+    title = ParagraphStyle(
+        "title", parent=center, fontName="Times-Bold", fontSize=12.5, spaceBefore=14
+    )
+    small = ParagraphStyle("small", parent=body, fontSize=9, leading=12, spaceAfter=0)
+    case_number = facts.get("case_number", "")
+    judge = facts.get("judge", "")
+    initials = "".join(part[0] for part in judge.replace(".", "").split() if part[0].isupper())
+    chapter = facts.get("chapter", 13)
+    district = facts.get("district", "")
+    buffer = BytesIO()
+    pdf = SimpleDocTemplate(
+        buffer,
+        pagesize=(612, 792),
+        rightMargin=72,
+        leftMargin=72,
+        topMargin=48,
+        bottomMargin=58,
+        invariant=1,
+        title=f"{document.title}",
+        author=f"{facts.get('court', '')}, {district}",
+        subject=f"{document.title}; supplied for loan {fixture.loan_identifier}",
+        keywords=_provenance(fixture, document, variant),
+        creator="Court electronic filing system",
+    )
+    caption = Table(
+        [
+            [
+                Paragraph(
+                    "In re:<br/><br/>"
+                    f"{escape(facts.get('debtor_name', '').upper())},<br/><br/>"
+                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debtor.<br/><br/>"
+                    "Last four digits of Social Security No.: "
+                    f"xxx-xx-{escape(str(facts.get('debtor_ssn_last4', '')))}",
+                    ParagraphStyle("cap", parent=body, spaceAfter=0),
+                ),
+                Paragraph(
+                    f"Chapter {chapter}<br/><br/>"
+                    f"Case No. {escape(case_number)} ({escape(initials)})<br/><br/>"
+                    f"Re: Docket No. {facts.get('motion_docket_number', '')}",
+                    ParagraphStyle("cap2", parent=body, spaceAfter=0),
+                ),
+            ]
+        ],
+        colWidths=[270, 198],
+    )
+    caption.setStyle(
+        TableStyle(
+            [
+                ("LINEAFTER", (0, 0), (0, 0), 0.8, rule),
+                ("LINEBELOW", (0, 0), (0, 0), 0.8, rule),
+                ("LEFTPADDING", (0, 0), (0, 0), 0),
+                ("LEFTPADDING", (1, 0), (1, 0), 16),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 10),
+            ]
+        )
+    )
+    docket = [["No.", "Date filed", "Docket text"]] + [
+        [
+            str(row["number"]),
+            long_date(row["date"]),
+            Paragraph(escape(row["text"]), small),
+        ]
+        for row in facts.get("docket", [])
+    ]
+    docket_table = Table(docket, colWidths=[36, 112, 320], repeatRows=1)
+    docket_table.setStyle(
+        TableStyle(
+            [
+                ("FONTNAME", (0, 0), (-1, -1), "Times-Roman"),
+                ("FONTNAME", (0, 0), (-1, 0), "Times-Bold"),
+                ("FONTSIZE", (0, 0), (-1, -1), 9),
+                ("TEXTCOLOR", (0, 0), (-1, -1), ink),
+                ("LINEBELOW", (0, 0), (-1, 0), 0.8, rule),
+                ("LINEBELOW", (0, 1), (-1, -1), 0.3, colors.HexColor("#b5b5b5")),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 2),
+                ("TOPPADDING", (0, 0), (-1, -1), 3),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+            ]
+        )
+    )
+    entered = long_date(facts["record_date"])
+    story = [
+        Paragraph(escape(facts.get("court", "").upper()), court),
+        Paragraph(escape(district.upper()), court),
+        Spacer(1, 18),
+        caption,
+        Paragraph(f"ORDER DISMISSING CHAPTER {chapter} CASE", title),
+        Spacer(1, 6),
+        *[Paragraph(escape(text), body) for text in document.paragraphs],
+        Spacer(1, 4),
+        Paragraph(escape(f"Dated: {entered}"), body),
+        Spacer(1, 2),
+        Table(
+            [["", _Signature(judge, size=18, width=220)]],
+            colWidths=[248, 220],
+            style=[("LEFTPADDING", (0, 0), (-1, -1), 0)],
+        ),
+        Table(
+            [
+                [
+                    "",
+                    Paragraph(
+                        f"BY THE COURT:<br/>{escape(judge)}<br/>United States Bankruptcy Judge",
+                        ParagraphStyle("judge", parent=body, spaceAfter=0),
+                    ),
+                ]
+            ],
+            colWidths=[248, 220],
+            style=[("LEFTPADDING", (0, 0), (-1, -1), 0)],
+        ),
+        Spacer(1, 14),
+        Paragraph(
+            escape(
+                f"Docket excerpt, Case No. {case_number} (selected entries). Filed "
+                f"{long_date(facts['filed_date'])}; plan confirmed "
+                f"{long_date(facts['plan_confirmed_date'])}. Chapter 13 Trustee: "
+                f"{facts.get('trustee', '')}. Attorney for Debtor: "
+                f"{facts.get('debtor_attorney', '')}."
+            ),
+            small,
+        ),
+        Spacer(1, 6),
+        docket_table,
+    ]
+
+    def footer(canvas, _):
+        canvas.saveState()
+        canvas.setFont("Times-Roman", 8.5)
+        canvas.setFillColor(muted)
+        canvas.drawString(
+            72,
+            40,
+            f"Case {case_number}    Doc {facts.get('order_docket_number', '')}    "
+            f"Entered {entered}",
+        )
+        canvas.setFont("Times-Italic", 7.5)
+        canvas.drawCentredString(
+            306,
+            26,
+            "Demonstration record prepared for software testing. "
+            "Not an official court record; no real case or court exists.",
+        )
+        canvas.restoreState()
+
+    pdf.build(story, onFirstPage=footer, onLaterPages=footer)
+    return buffer.getvalue()
+
+
+def render_representation_letter(fixture, document, variant: str) -> bytes:
+    """The borrower's signed authorization on the representative's letterhead."""
+    from reportlab.lib.enums import TA_CENTER
+    from reportlab.lib.styles import ParagraphStyle
+
+    facts, context = document.facts, fixture.loan_context
+    client = client_settings(fixture.client_code)
+    ink, muted = colors.HexColor("#1b1b1b"), colors.HexColor("#555555")
+    base = getSampleStyleSheet()
+    body = ParagraphStyle(
+        "letter",
+        parent=base["Normal"],
+        fontName="Times-Roman",
+        fontSize=10.5,
+        leading=14,
+        textColor=ink,
+        spaceAfter=7,
+    )
+    tight = ParagraphStyle("tight", parent=body, spaceAfter=0)
+    bold = ParagraphStyle("bold", parent=tight, fontName="Times-Bold")
+    firm = facts.get("representative_firm", "")
+    head = ParagraphStyle(
+        "firm", parent=tight, fontName="Times-Bold", fontSize=17, leading=21, alignment=TA_CENTER
+    )
+    sub = ParagraphStyle("sub", parent=tight, fontSize=9, leading=12, alignment=TA_CENTER)
+    borrower = facts.get("borrower_name") or fixture.borrower_display_name
+    representative = facts.get("representative_name", "")
+    signed = long_date(facts["signed_date"]) if facts.get("signed_date") else ""
+    buffer = BytesIO()
+    pdf = SimpleDocTemplate(
+        buffer,
+        pagesize=(612, 792),
+        rightMargin=72,
+        leftMargin=72,
+        topMargin=54,
+        bottomMargin=60,
+        invariant=1,
+        title=f"{document.title} - Loan {fixture.loan_identifier}",
+        author=firm or borrower,
+        subject=f"{document.title} for loan {fixture.loan_identifier}",
+        keywords=_provenance(fixture, document, variant),
+        creator="Scanned document",
+    )
+
+    def lines(*values, style=tight):
+        return Paragraph("<br/>".join(escape(v) for v in values if v), style)
+
+    letterhead = [
+        Paragraph(escape(firm.upper()), head),
+        Paragraph(escape(facts.get("firm_practice", "Attorneys at Law")), sub),
+        Paragraph(
+            escape(
+                "  |  ".join(
+                    v
+                    for v in (
+                        facts.get("firm_address", ""),
+                        facts.get("representative_phone", ""),
+                        facts.get("representative_email", ""),
+                    )
+                    if v
+                )
+            ),
+            sub,
+        ),
+    ]
+    rule = Table([[""]], colWidths=[468], rowHeights=[6])
+    rule.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, -1), 1.2, ink)]))
+    story = [
+        *letterhead,
+        rule,
+        Spacer(1, 14),
+        lines(signed),
+        Spacer(1, 10),
+        lines(
+            client.get("legal_name", client["display_name"]),
+            "Attn: Customer Correspondence",
+            *client.get("mailing_address", "").split(", ", 1),
+        ),
+        Spacer(1, 14),
+        lines(f"Re: {document.title}", style=bold),
+        _plain_table(
+            [
+                ["Borrower:", borrower],
+                ["Loan number:", fixture.loan_identifier],
+                ["Property:", context.get("property_address", "")],
+                ["Representative:", ", ".join(v for v in (representative, firm) if v)],
+            ],
+            [100, 368],
+            size=10.5,
+        ),
+        Spacer(1, 12),
+        Paragraph("To whom it may concern:", body),
+        *[Paragraph(escape(text), body) for text in document.paragraphs],
+        Spacer(1, 6),
+        _plain_table(
+            [
+                ["Representative:", representative],
+                ["Email:", facts.get("representative_email", "")],
+                ["Phone:", facts.get("representative_phone", "")],
+            ],
+            [100, 368],
+            size=10.5,
+        ),
+        Spacer(1, 14),
+        Table(
+            [
+                [
+                    Paragraph("Borrower signature:", tight),
+                    Paragraph(escape(facts.get("acceptance_label", "Accepted by counsel:")), tight),
+                ],
+                [
+                    _Signature(borrower, size=20, width=220),
+                    _Signature(representative, size=18, width=220),
+                ],
+                [
+                    lines(borrower, f"Signed and dated: {signed}"),
+                    lines(representative, firm),
+                ],
+            ],
+            colWidths=[234, 234],
+            hAlign="LEFT",
+            style=[
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ],
+        ),
+    ]
+
+    def footer(canvas, _):
+        canvas.saveState()
+        canvas.setFont("Times-Italic", 7.5)
+        canvas.setFillColor(muted)
+        canvas.drawCentredString(
+            306,
+            30,
+            "Demonstration record prepared for software testing; fictional representative and firm.",
+        )
+        canvas.restoreState()
+
+    pdf.build(story, onFirstPage=footer, onLaterPages=footer)
+    return buffer.getvalue()
+
+
+def render_bankruptcy_memo(fixture, document, variant: str) -> bytes:
+    """Internal Bankruptcy Team determination memo (not an outgoing attachment)."""
+    from reportlab.lib.styles import ParagraphStyle
+
+    facts, context = document.facts, fixture.loan_context
+    client = client_settings(fixture.client_code)
+    ink, muted, band = (
+        colors.HexColor("#1f2a33"),
+        colors.HexColor("#56636d"),
+        colors.HexColor("#eef1f4"),
+    )
+    base = getSampleStyleSheet()
+    body = ParagraphStyle(
+        "memo", parent=base["Normal"], fontSize=10, leading=14, textColor=ink, spaceAfter=8
+    )
+    small = ParagraphStyle("small", parent=body, fontSize=8, leading=10, textColor=muted)
+    brand = ParagraphStyle("brand", parent=body, fontName="Helvetica-Bold", fontSize=13)
+    title = ParagraphStyle("title", parent=body, fontName="Helvetica-Bold", fontSize=15)
+    section = ParagraphStyle(
+        "section", parent=body, fontName="Helvetica-Bold", spaceBefore=6, spaceAfter=4
+    )
+    reviewer = facts.get("reviewed_by", "")
+    reviewed = facts.get("reviewed_at", "")[:10]
+    buffer = BytesIO()
+    pdf = SimpleDocTemplate(
+        buffer,
+        pagesize=(612, 792),
+        rightMargin=56,
+        leftMargin=56,
+        topMargin=48,
+        bottomMargin=56,
+        invariant=1,
+        title=document.title,
+        author=reviewer,
+        subject=f"{document.title}; loan {fixture.loan_identifier}",
+        keywords=_provenance(fixture, document, variant),
+        creator="Servicing workflow",
+    )
+    header = Table(
+        [
+            ["To", facts.get("referred_to", "")],
+            ["From", reviewer],
+            ["Date", long_date(reviewed) if reviewed else ""],
+            ["Borrower", fixture.borrower_display_name],
+            ["Loan number", fixture.loan_identifier],
+            ["Case reference", fixture.ccid],
+            ["Reference", facts.get("reference", "")],
+        ],
+        colWidths=[100, 400],
+        hAlign="LEFT",
+    )
+    header.setStyle(
+        TableStyle(
+            [
+                ("FONTSIZE", (0, 0), (-1, -1), 9.5),
+                ("FONTNAME", (0, 0), (0, -1), "Helvetica-Bold"),
+                ("TEXTCOLOR", (0, 0), (-1, -1), ink),
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("TOPPADDING", (0, 0), (-1, -1), 2),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
+                ("LINEBELOW", (0, -1), (-1, -1), 0.8, ink),
+            ]
+        )
+    )
+    status = facts.get("determination", "").replace("_", " ")
+    summary = Table(
+        [
+            [
+                "Bankruptcy case",
+                Paragraph(
+                    escape(
+                        f"No. {facts.get('case_number', '')}, Chapter "
+                        f"{context.get('bankruptcy_chapter', 13)}, "
+                        f"{context.get('bankruptcy_court', '')}"
+                    ),
+                    ParagraphStyle("cell", parent=body, fontSize=9.2, leading=11.5, spaceAfter=0),
+                ),
+            ],
+            [
+                "Case dismissed",
+                long_date(facts["dismissed_date"])
+                + f" (Docket No. {facts.get('order_docket_number', '')})",
+            ],
+            ["Discharge entered", "Yes" if facts.get("discharge_entered") else "No"],
+            [
+                "Previous servicing marker",
+                f"{facts.get('previous_marker', '').capitalize()} "
+                f"({facts.get('previous_marker_source', '')})",
+            ],
+            ["Determined status", status.capitalize()],
+            [
+                "Communication",
+                "Counsel only: "
+                + ", ".join(
+                    v
+                    for v in (
+                        context.get("representative_name"),
+                        context.get("representative_firm"),
+                    )
+                    if v
+                ),
+            ],
+            ["Credit reporting", "Not determined here; referred to Compliance"],
+        ],
+        colWidths=[140, 360],
+        hAlign="LEFT",
+    )
+    summary.setStyle(
+        TableStyle(
+            [
+                ("FONTSIZE", (0, 0), (-1, -1), 9.2),
+                ("TEXTCOLOR", (0, 0), (-1, -1), ink),
+                ("TEXTCOLOR", (0, 0), (0, -1), muted),
+                ("BACKGROUND", (0, 0), (-1, -1), band),
+                ("BOX", (0, 0), (-1, -1), 0.6, muted),
+                ("TOPPADDING", (0, 0), (-1, -1), 3),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+                ("LEFTPADDING", (0, 0), (-1, -1), 6),
+            ]
+        )
+    )
+    story = [
+        Paragraph(escape(client["display_name"]), brand),
+        Paragraph("Bankruptcy Team  |  Internal record", small),
+        Spacer(1, 12),
+        Paragraph(escape(document.title), title),
+        Spacer(1, 8),
+        header,
+        Spacer(1, 12),
+        Paragraph("Determination", section),
+        summary,
+        Spacer(1, 8),
+        Paragraph("Findings", section),
+        *[Paragraph(escape(text), body) for text in document.paragraphs],
+        Spacer(1, 8),
+        Paragraph(escape(f"Reviewed by {reviewer}"), small),
+    ]
+
+    def footer(canvas, _):
+        canvas.saveState()
+        canvas.setFont("Helvetica", 7.5)
+        canvas.setFillColor(muted)
+        canvas.drawString(
+            56, 30, "Internal servicing record. Not for release to the borrower or counsel."
+        )
+        canvas.drawRightString(556, 30, facts.get("reference", ""))
+        canvas.restoreState()
+
+    pdf.build(story, onFirstPage=footer, onLaterPages=footer)
+    return buffer.getvalue()
+
+
 def render_document(fixture, document, variant: str) -> bytes:
     if document.availability == "unreadable":
         return b"%PDF-1.7\nSYNTHETIC intentionally truncated validation fixture\n"
@@ -1335,6 +1821,12 @@ def render_document(fixture, document, variant: str) -> bytes:
         return render_escrow_analysis(fixture, document, variant)
     if fixture.scenario_id == "DEMO-05" and document.key == "clarification":
         return render_email_printout(fixture, document, variant)
+    if fixture.scenario_id == "DEMO-04" and document.key == "court-record":
+        return render_court_order(fixture, document, variant)
+    if document.key == "representation" and document.facts.get("representative_name"):
+        return render_representation_letter(fixture, document, variant)
+    if fixture.scenario_id == "DEMO-04" and document.key == "specialist-determination":
+        return render_bankruptcy_memo(fixture, document, variant)
     buffer = BytesIO()
     loan = document.declared_loan_identifier or fixture.loan_identifier
     wrong_loan = loan != fixture.loan_identifier

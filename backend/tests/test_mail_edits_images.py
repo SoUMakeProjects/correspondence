@@ -283,7 +283,7 @@ def test_migration_preserves_preexisting_pdf_upload(settings):
         )
     engine.dispose()
     with TestClient(create_app(settings, start_worker=False)) as client:
-        assert client.get("/api/health").json()["schema_revision"] == "0008"
+        assert client.get("/api/health").json()["schema_revision"] == "0009"
         response = client.get(f"/api/mail/attachments/{identity}/file")
         assert response.headers["content-type"] == "application/pdf"
         assert response.content == content

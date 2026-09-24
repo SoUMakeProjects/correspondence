@@ -115,11 +115,35 @@ def validate_response(session: Session, data_dir: Path, case_id: str, candidate:
             "unsupported_information_request",
             "Record the missing information and resume requirement before requesting it.",
         )
+    if scenario == "DEMO-04":
+        # Counsel has supplied everything the review needs; the only letter is the written
+        # acknowledgment of the dispute. Compliance owns the substantive response.
+        if candidate.response_type == "information_request":
+            reject(
+                "unsupported_information_request",
+                "No information is needed from the representative; the bankruptcy and credit "
+                "reporting review is internal.",
+            )
+        sent_versions = set(
+            session.scalars(
+                select(ResponseDraft.version)
+                .join(OutboxEntry, OutboxEntry.draft_id == ResponseDraft.id)
+                .where(ResponseDraft.case_id == case_id, OutboxEntry.status == "sent")
+            )
+        )
+        if sent_versions and candidate.version not in sent_versions:
+            reject(
+                "acknowledgment_already_sent",
+                "The dispute acknowledgment was already sent to counsel. Do not send another "
+                "letter; Compliance owns the written response after its review.",
+            )
 
     selected = set(candidate.attachment_ids)
     if len(selected) != len(candidate.attachment_ids):
         reject("duplicate_attachment", "Each attachment must be selected once.")
     relevant_keys = POLICY["scenarios"].get(scenario, {}).get("required_documents", [])
+    if scenario == "DEMO-04":
+        relevant_keys = []  # Counsel's own documents are never sent back as attachments.
     for identity in selected:
         row, checked = evidence.get(identity), checks.get(identity)
         if not row or not checked or not checked.valid or row["details"].get("kind") == "record":
@@ -284,6 +308,18 @@ def validate_response(session: Session, data_dir: Path, case_id: str, candidate:
             assessment,
         )
         or eft_letter(
+            scenario,
+            candidate,
+            snapshot,
+            evidence,
+            checks,
+            tasks,
+            lines,
+            applicable,
+            client,
+            assessment,
+        )
+        or bankruptcy_letter(
             scenario,
             candidate,
             snapshot,
@@ -1105,3 +1141,159 @@ def eft_letter(
         *_disclosures(candidate, applicable),
     ]
     return _letter(paragraphs)
+
+
+# Written response window promised in the dispute acknowledgment (DEMO-04). Credit reporting
+# disputes sent directly to a furnisher are investigated within 30 days of receipt.
+DISPUTE_RESPONSE_DAYS = 30
+
+
+def bankruptcy_letter(
+    scenario, candidate, snapshot, evidence, checks, tasks, lines, applicable, client, assessment
+):
+    """Deterministic acknowledgment of counsel's credit reporting dispute (DEMO-04).
+
+    The letter goes only to the verified representative. It confirms receipt of the dispute and
+    of counsel's documents, confirms counsel-only contact, says the dispute has been referred to
+    the bankruptcy and credit reporting specialists and gives the written response date. It
+    never states a credit reporting outcome or liability. It reports the bankruptcy status only
+    when a validated ``bankruptcy_status`` claim (backed by the supported specialist result) is
+    part of the draft. Variable parts come from the case receipt, the loan record, the
+    identity-checked court order and authorization, the supported task result, client
+    configuration and the validated claims. Returns None when prerequisites are absent, so the
+    generic checked rendering is used instead.
+    """
+    if (
+        scenario != "DEMO-04"
+        or candidate.response_type not in {"interim_acknowledgment", "referral"}
+        or not client
+    ):
+        return None
+    from datetime import date, timedelta
+
+    context = snapshot["loan"]["context"]
+    representative = context.get("representative_name")
+    if (
+        not representative
+        or context.get("communication_restriction") != "representative_only"
+        or candidate.recipient != context.get("authorized_recipient")
+    ):
+        return None
+    docs = {
+        row["details"].get("key"): row["details"].get("facts", {})
+        for identity, row in evidence.items()
+        if identity in checks and checks[identity].valid
+    }
+    authorization, order = docs.get("representation", {}), docs.get("court-record", {})
+    case_number = order.get("case_number")
+    if (
+        authorization.get("representative_email") != candidate.recipient
+        or authorization.get("authorization_verified") is not True
+        or not authorization.get("signed_date")
+        or not case_number
+        or case_number != context.get("bankruptcy_case_number")
+        or not order.get("record_date")
+    ):
+        return None
+    loan = snapshot["loan"]
+    loan_id = loan["loan_identifier"]
+    borrower = loan.get("borrower_display_name") or "the borrower"
+    firm = context.get("representative_firm")
+    chapter = context.get("bankruptcy_chapter", order.get("chapter", 13))
+    court = context.get("bankruptcy_court", "")
+    received_text = snapshot["case"]["original_received_at"]
+    received = _eastern_long_date(received_text)
+    received_day = date.fromisoformat(_eastern_iso_date(received_text))
+    due = _long_date(received_day + timedelta(days=DISPUTE_RESPONSE_DAYS))
+    claimed = {c.field: c.value for c in candidate.claims}
+    determined = claimed.get("bankruptcy_status") == "dismissed_without_discharge"
+    result = next(
+        (
+            (tasks.get(t.task_id) or {}).get("result") or {}
+            for t in assessment.tasks
+            if t.task_type == "demo_bankruptcy_status_review" and t.result_supported
+        ),
+        {},
+    )
+    dismissed = result.get("dismissed_date") or order.get("record_date")
+    review = (
+        "Our Bankruptcy Team has completed its review of the court record. Our servicing "
+        f"records now show Chapter {chapter} case No. {case_number} as dismissed on "
+        f"{_long_date(dismissed)}, without a discharge. Our review of how the account is "
+        "reported to the consumer reporting agencies is still in progress."
+        if determined
+        else "They will review the court record against the bankruptcy information in our "
+        "servicing records and how the account is reported to the consumer reporting agencies."
+    )
+    caveat = (
+        "This letter confirms that we received your dispute. It is not the result of our "
+        "investigation. We have not yet made any determination about how the account is "
+        "reported to the consumer reporting agencies"
+        + ("" if determined else " or about the bankruptcy status shown in our records")
+        + ", and this letter does not change the terms of the loan."
+    )
+    formatted = {
+        "bankruptcy_status": lambda v: (
+            "Bankruptcy case status: " + str(v).replace("_", " ").capitalize()
+        ),
+        "task_completed": lambda v: f"Bankruptcy Team review reference: {v}",
+    }
+    extra = [
+        f"Borrower: {borrower}",
+        f"Property: {context.get('property_address', '')}"
+        if context.get("property_address")
+        else "",
+        f"Bankruptcy case: No. {case_number} (Chapter {chapter})" + (f", {court}" if court else ""),
+        f"Dispute received: {received}",
+        f"Written response by: {due}",
+        "Correspondence: through counsel only ("
+        + ", ".join(v for v in (representative, firm) if v)
+        + ")",
+        *[formatted[c.field](c.value) for c in candidate.claims if c.field in formatted],
+    ]
+    others = [
+        line
+        for claim, line in zip(candidate.claims, lines, strict=False)
+        if claim.field not in formatted and claim.field != "loan_identifier"
+    ]
+    brand = client["display_name"]
+    paragraphs = [
+        _salutation(representative),
+        f"Thank you for your email, which we received on {received}. You wrote on behalf of "
+        f"your client, {borrower}, to dispute how the mortgage loan ending in {loan_id[-4:]} "
+        f"is reported to the consumer reporting agencies after Chapter {chapter} case "
+        f"No. {case_number} was dismissed.",
+        "We have also received the documents you sent: your client's signed authorization "
+        f"to communicate through counsel, dated {_long_date(authorization['signed_date'])}, "
+        f"and a copy of the order dismissing the case, entered on "
+        f"{_long_date(order['record_date'])}. As your client asked, we will send all "
+        "correspondence about this loan to you and will not contact your client directly "
+        "while the authorization is in effect.",
+        "We have referred your dispute to our bankruptcy and credit reporting specialists. "
+        + review,
+        caveat,
+        f"We will send you a written response with the results of our review by {due}, "
+        f"within {DISPUTE_RESPONSE_DAYS} days of receiving your dispute. If we need anything "
+        "else from you to complete the review, we will contact you.",
+        _contact_paragraph(
+            client["settings"], "If you have questions or would like to send additional documents"
+        ),
+        "Sincerely,\n" + client["settings"].get("signature", brand),
+        _reference_block(others, loan_id, [e for e in extra if e]),
+        *_disclosures(candidate, applicable),
+    ]
+    return _letter(paragraphs)
+
+
+def _eastern_iso_date(value) -> str:
+    """Calendar date (YYYY-MM-DD) of an instant in America/New_York."""
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+
+    text = value if isinstance(value, str) else value.isoformat()
+    if len(text) <= 10:
+        return text
+    moment = datetime.fromisoformat(text.replace("Z", "+00:00"))
+    if moment.tzinfo is None:
+        return text[:10]
+    return moment.astimezone(ZoneInfo("America/New_York")).date().isoformat()

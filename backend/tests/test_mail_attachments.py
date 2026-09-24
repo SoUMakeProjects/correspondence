@@ -243,7 +243,7 @@ def test_0006_upgrade_preserves_existing_mail(settings):
         )
     engine.dispose()
     with TestClient(create_app(settings, start_worker=False)) as client:
-        assert client.get("/api/health").json()["schema_revision"] == "0008"
+        assert client.get("/api/health").json()["schema_revision"] == "0009"
         assert (
             client.get(f"/api/mail/threads/{identity}").json()["messages"][0]["body"]
             == "Retain my request"

@@ -279,6 +279,9 @@ class SpecialistHandoff(Identity, Base):
     restrictions: Mapped[list] = mapped_column(JSON)
     acknowledged_by: Mapped[str | None] = mapped_column(String(120), nullable=True)
     acknowledged_at: Mapped[datetime | None] = mapped_column(UTCDateTime(), nullable=True)
+    # Human-readable internal routing note and the recipient's acknowledgment (display only).
+    routing_note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    acknowledgment_note: Mapped[str | None] = mapped_column(Text, nullable=True)
 
 
 class MailThread(Identity, Base):

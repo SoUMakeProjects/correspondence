@@ -34,8 +34,8 @@ def evaluate(settings):
         ),
         (
             "bankruptcy",
-            "counsel.demo@example.com",
-            "I represent the borrower for loan 0099000004. The court record says dismissed, but your records say discharged. Please reconcile the bankruptcy status.",
+            "monica.ferrante@ferrantehale.example.com",
+            "I represent Gregory P. Lindqvist on loan 0099000004. His Chapter 13 case No. 24-10382 was dismissed on July 14, 2026 without a discharge, but his credit report shows the mortgage as discharged in bankruptcy. Please investigate and respond to me in writing.",
         ),
         (
             "eft",

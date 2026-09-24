@@ -1,0 +1,577 @@
+{
+  "recorded_on": "2026-09-24",
+  "deployment": "gpt-5.6-sol",
+  "api_path": {
+    "path": "api",
+    "checked_at": "2026-09-24T06:06:42.717837+00:00",
+    "overall": "passed",
+    "checks": {
+      "initial_handoff": true,
+      "acknowledgment_sent_before_determination": true,
+      "expected_case_status": true,
+      "receipt_anchor_preserved": true,
+      "all_runs_live": true,
+      "claims_validated": true,
+      "no_duplicate_delivery": true,
+      "single_task_reused": true,
+      "classification_exception_retained": true,
+      "representative_only": true,
+      "single_acknowledgment": true,
+      "no_reporting_outcome_stated": true,
+      "borrower_not_contacted": true,
+      "final_run_transferred": true,
+      "determination_routed_to_compliance": true
+    },
+    "final_case_status": "transferred",
+    "interventions": [
+      {
+        "kind": "review_approved",
+        "draft_id": "2a09f1b8-7412-4d61-b22a-f17ca7bf4254"
+      },
+      {
+        "kind": "bankruptcy_specialist_result"
+      },
+      {
+        "kind": "handoff_acknowledged"
+      }
+    ],
+    "model": {
+      "provider": "azure_openai",
+      "source": "live_azure",
+      "prompt_version": "phase8-v4",
+      "tool_contract": 7,
+      "limits": {
+        "max_steps": 28,
+        "max_seconds": 300,
+        "max_model_calls": 28,
+        "max_total_tokens": 250000,
+        "max_completion_tokens": 1600,
+        "max_context_characters": 100000
+      }
+    },
+    "runs": [
+      {
+        "summary": {
+          "run_id": "ba35e852-13db-4bf4-b2ae-ca01e9446f94",
+          "status": "waiting_for_review",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 28.82,
+          "model_calls": 7,
+          "reported_tokens": 51819,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 51194,
+          "completion_tokens": 625,
+          "total_tokens": 51819
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "task_read",
+          "apply_plan",
+          "prepare_response",
+          "request_handoff",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 4,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "request_handoff",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "5e9722de-56f5-4a06-9d11-db027ad40d4a",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 27.95,
+          "model_calls": 7,
+          "reported_tokens": 59466,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 58926,
+          "completion_tokens": 540,
+          "total_tokens": 59466
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "task_read",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 4,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "9e5e6009-253e-4451-baea-d26ae53f1147",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 31.66,
+          "model_calls": 6,
+          "reported_tokens": 55229,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 54849,
+          "completion_tokens": 380,
+          "total_tokens": 55229
+        },
+        "tools": [
+          "observe_case",
+          "task_read",
+          "knowledge_search",
+          "apply_plan",
+          "request_handoff",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 4,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "request_handoff",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "a3d2f606-a594-41c6-9740-6ed270dca830",
+          "status": "completed",
+          "reason": "verified_handoff",
+          "elapsed_seconds": 6.34,
+          "model_calls": 2,
+          "reported_tokens": 11995,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 11936,
+          "completion_tokens": 59,
+          "total_tokens": 11995
+        },
+        "tools": [
+          "observe_case",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      }
+    ],
+    "deliveries": 1,
+    "packages": 1,
+    "notes": 1
+  },
+  "mailbox_path": {
+    "path": "mailbox",
+    "checked_at": "2026-09-24T06:21:05.459320+00:00",
+    "overall": "passed",
+    "checks": {
+      "initial_handoff": true,
+      "acknowledgment_sent_before_determination": true,
+      "expected_case_status": true,
+      "receipt_anchor_preserved": true,
+      "all_runs_live": true,
+      "claims_validated": true,
+      "no_duplicate_delivery": true,
+      "all_runs_automatically_triggered": true,
+      "same_records_in_system_views": true,
+      "mailbox_contains_actual_responses": true,
+      "reply_stays_in_original_case": true,
+      "single_task_reused": true,
+      "classification_exception_retained": true,
+      "representative_only": true,
+      "single_acknowledgment": true,
+      "no_reporting_outcome_stated": true,
+      "borrower_not_contacted": true,
+      "final_run_transferred": true,
+      "determination_routed_to_compliance": true
+    },
+    "final_case_status": "transferred",
+    "interventions": [
+      {
+        "kind": "review_approved",
+        "draft_id": "641fd79f-412c-42b6-9640-70b6e2556a14"
+      },
+      {
+        "kind": "bankruptcy_specialist_result"
+      },
+      {
+        "kind": "handoff_acknowledged"
+      }
+    ],
+    "model": {
+      "provider": "azure_openai",
+      "source": "live_azure",
+      "prompt_version": "phase8-v4",
+      "tool_contract": 7,
+      "limits": {
+        "max_steps": 28,
+        "max_seconds": 300,
+        "max_model_calls": 28,
+        "max_total_tokens": 250000,
+        "max_completion_tokens": 1600,
+        "max_context_characters": 100000
+      }
+    },
+    "runs": [
+      {
+        "summary": {
+          "run_id": "90cf6304-b5b6-4493-8a65-23b39a84529a",
+          "status": "waiting_for_review",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 23.79,
+          "model_calls": 6,
+          "reported_tokens": 41748,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 41325,
+          "completion_tokens": 423,
+          "total_tokens": 41748
+        },
+        "tools": [
+          "observe_case",
+          "knowledge_search",
+          "task_read",
+          "apply_plan",
+          "prepare_response",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 4,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "prepare_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "3b27af81-a5d8-4111-88b7-431e6283afc8",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 26.19,
+          "model_calls": 7,
+          "reported_tokens": 49293,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 48857,
+          "completion_tokens": 436,
+          "total_tokens": 49293
+        },
+        "tools": [
+          "observe_case",
+          "send_response",
+          "index_response",
+          "record_final_note",
+          "task_read",
+          "request_handoff",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "send_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 3,
+            "tool": "index_response",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 4,
+            "tool": "record_final_note",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 6,
+            "tool": "request_handoff",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 7,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "01b83e15-4181-46f1-8e62-2cc1e376b0fb",
+          "status": "waiting_for_input",
+          "reason": "verified_outcome",
+          "elapsed_seconds": 21.23,
+          "model_calls": 6,
+          "reported_tokens": 54964,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 54658,
+          "completion_tokens": 306,
+          "total_tokens": 54964
+        },
+        "tools": [
+          "observe_case",
+          "task_read",
+          "knowledge_search",
+          "apply_plan",
+          "request_handoff",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "task_read",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 3,
+            "tool": "knowledge_search",
+            "status": "ok",
+            "code": "read_complete"
+          },
+          {
+            "step": 4,
+            "tool": "apply_plan",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 5,
+            "tool": "request_handoff",
+            "status": "simulated_complete",
+            "code": "simulated_complete"
+          },
+          {
+            "step": 6,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      },
+      {
+        "summary": {
+          "run_id": "f45ff331-f5b9-4335-9c8c-97c0a01dbecd",
+          "status": "completed",
+          "reason": "verified_handoff",
+          "elapsed_seconds": 9.38,
+          "model_calls": 2,
+          "reported_tokens": 11981,
+          "source": "live_azure"
+        },
+        "usage": {
+          "prompt_tokens": 11889,
+          "completion_tokens": 92,
+          "total_tokens": 11981
+        },
+        "tools": [
+          "observe_case",
+          "finish_run"
+        ],
+        "steps": [
+          {
+            "step": 1,
+            "tool": "observe_case",
+            "status": "ok",
+            "code": "observed"
+          },
+          {
+            "step": 2,
+            "tool": "finish_run",
+            "status": "ok",
+            "code": "verified_outcome"
+          }
+        ]
+      }
+    ],
+    "deliveries": 1,
+    "packages": 1,
+    "notes": 1
+  }
+}

@@ -114,8 +114,11 @@ def test_five_base_cases_have_scoped_synthetic_evidence_and_no_future_answers(cl
         row["details"]["facts"].get("reported_status") == "dismissed_without_discharge"
         for row in credit
     )
-    assert credit[0]["details"]["facts"]["authorized_recipient"] == "counsel.demo@example.com"
-    assert "DEMO-BK-RESULT-004" not in json.dumps(credit)
+    assert (
+        credit[0]["details"]["facts"]["authorized_recipient"]
+        == "monica.ferrante@ferrantehale.example.com"
+    )
+    assert "BK-REV-260922-004" not in json.dumps(credit)
     eft = evidence_for(client, loaded["DEMO-05"])
     assert eft[0]["details"]["facts"]["eft_intent"] is None
 
@@ -334,7 +337,7 @@ def test_phase1_database_upgrade_preserves_case_event_and_evidence(settings):
         assert case["original_received_at"] == "2026-09-17T14:00:00.123456Z"
         assert len(client.get(f"/api/cases/{ids['case']}/events").json()["items"]) == 1
         assert evidence_for(client, case)[0]["details"] == {}
-        assert client.get("/api/health").json()["schema_revision"] == "0008"
+        assert client.get("/api/health").json()["schema_revision"] == "0009"
 
 
 def test_changed_file_is_not_served_as_verified_evidence(client, application, settings):

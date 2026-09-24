@@ -12,6 +12,7 @@ from app.documents import library_document, render_document
 from app.domain import DomainError
 from app.fixture_contracts import DocumentFixture, FollowupFixture
 from app.fixture_data import load_fixture
+from app.letter_emphasis import emphasis_spans
 from app.mail_templates import EFT_REPLIES
 from app.models import (
     ActionReceipt,
@@ -32,9 +33,21 @@ from app.models import (
 )
 from app.repository import case_read, fingerprint, require_case
 from app.response_validation import validate_response
+from app.routing import EASTERN
 from app.rule_contracts import DraftCandidate
 from app.simulators.common import row_data, scope
 from app.source_catalog import DATA_ROOT, read_json
+
+# Designee used by the diagnostic "authorized representative" input (any scenario).
+REPRESENTATIVE = {
+    "representative_name": "Elena M. Ruiz",
+    "representative_firm": "Brightpath Housing Counseling",
+    "firm_practice": "HUD-approved housing counseling agency",
+    "representative_email": "elena.ruiz@brightpathhousing.example.org",
+    "representative_phone": "(614) 555-0127",
+    "firm_address": "455 Linden Avenue, Suite 2, Columbus, OH 43215",
+    "acceptance_label": "Accepted by counselor:",
+}
 
 
 def current_draft(session, case_id):
@@ -94,6 +107,7 @@ def draft_state(session, data_dir, draft, report=None):
         "response_type": draft.response_type,
         "recipient": draft.recipient,
         "body": draft.body,
+        "emphasis": emphasis_spans(draft.body),
         "candidate": draft.validation.get("candidate", {}),
         "current": current,
         "sent": sent,
@@ -406,25 +420,44 @@ def ingest(session, data_dir, case_id, payload, *, mail_message_id=None):
                             "cease_and_desist",
                             "Representative authorization does not reverse cease-and-desist restrictions.",
                         )
+                    borrower = ctx.loan.borrower_display_name
                     facts = {
+                        **REPRESENTATIVE,
+                        "borrower_name": borrower,
+                        "signed_date": ctx.simulation.evaluation_at.astimezone(EASTERN)
+                        .date()
+                        .isoformat(),
                         "authorized_role": "authorized_representative",
                         "authorization_verified": True,
-                        "representative_email": "delegate.demo@example.com",
                     }
                     ctx.loan.context = {
                         **ctx.loan.context,
                         "requester_role": "authorized_representative",
                         "authorized_recipient": facts["representative_email"],
+                        "representative_name": facts["representative_name"],
+                        "representative_firm": facts["representative_firm"],
                         "representation_verified": True,
                         "communication_restriction": "representative_only",
                         "ils_recipient": facts["representative_email"],
                         "csp_recipient": facts["representative_email"],
                     }
-                    title, key = "Synthetic representative authorization", "representation"
-                    summary = "The supplied synthetic authorization designates delegate.demo@example.com; communication remains representative-only."
+                    title, key = "Third-Party Authorization", "representation"
+                    summary = (
+                        f"{borrower}'s signed authorization designates "
+                        f"{facts['representative_name']} ({facts['representative_firm']}, "
+                        f"{facts['representative_email']}); communication is now "
+                        "representative-only."
+                    )
                     paragraphs = [
-                        summary,
-                        "Synthetic presenter input; no real authority or funds movement.",
+                        f"I, {borrower}, am the borrower on the mortgage loan identified above. I "
+                        f"am working with {facts['representative_name']}, a HUD-approved housing "
+                        f"counselor at {facts['representative_firm']}, on questions about this "
+                        "loan.",
+                        "I authorize my servicer to discuss this loan with my counselor, to "
+                        "release to her any information about the loan that she requests, and "
+                        "to send all correspondence about this loan to her at the email address "
+                        "below.",
+                        "This authorization remains in effect until I revoke it in writing.",
                     ]
                 document = DocumentFixture(
                     key=key,
@@ -656,6 +689,20 @@ def acknowledge(session, data_dir, case_id, payload):
             "acknowledged",
             payload.actor,
             utcnow(),
+        )
+        team = handoff.owner.removeprefix("Demo ")
+        open_items = [c for c in handoff.concerns if c.get("disposition") != "resolved"]
+        handoff.acknowledgment_note = (
+            f"Received by {payload.actor} for the {team}. The {team} accepts ownership of "
+            f"{len(open_items)} open item{'s' if len(open_items) != 1 else ''} in this referral; "
+            "the case is transferred and stays open until they are resolved."
+            + (
+                " Restrictions remain in force: "
+                + ", ".join(r.replace("_", " ") for r in handoff.restrictions)
+                + "."
+                if handoff.restrictions
+                else ""
+            )
         )
         ctx.case.status = "transferred"
         ctx.bump()

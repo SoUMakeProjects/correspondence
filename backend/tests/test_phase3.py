@@ -177,7 +177,7 @@ def test_selected_scenarios_have_explainable_dispositions(
     if scenario == "DEMO-04":
         assert assessment["routing"]["route"] == "Compliance"
         assert "classification_mapping_missing" in codes(assessment)
-        assert assessment["authorized_recipient"] == "counsel.demo@example.com"
+        assert assessment["authorized_recipient"] == "monica.ferrante@ferrantehale.example.com"
     if scenario in {"DEMO-03", "DEMO-04"}:
         assert len(assessment["tasks"]) == 1
         assert assessment["tasks"][0]["action"] == "reuse"

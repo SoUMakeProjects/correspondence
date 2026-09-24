@@ -29,7 +29,7 @@ def test_persistence_and_exact_values(application, settings, case_payload):
     with TestClient(create_app(settings)) as second:
         assert second.get(f"/api/cases/{item['id']}").json() == item
         assert second.get(f"/api/cases/{item['id']}/events").json() == events
-        assert second.get("/api/health").json()["schema_revision"] == "0008"
+        assert second.get("/api/health").json()["schema_revision"] == "0009"
 
 
 @pytest.mark.parametrize(

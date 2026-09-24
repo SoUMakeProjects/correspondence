@@ -18,7 +18,7 @@ test("business assessment explains pending work and persists decision evidence",
     assessment.getByText("classification mapping missing", { exact: true }),
   ).toBeVisible();
   await expect(
-    assessment.getByText("counsel.demo@example.com", { exact: false }),
+    assessment.getByText("monica.ferrante@ferrantehale.example.com", { exact: false }),
   ).toBeVisible();
   await assessment
     .getByRole("button", { name: "Record assessment", exact: true })

@@ -16,6 +16,7 @@ export type MailItem = {
   sender: string;
   recipient: string;
   body: string;
+  emphasis?: unknown;
   incoming: boolean;
   attachments: Record<string, unknown>[];
 };
@@ -65,6 +66,7 @@ export function messagesFor(conversation: ThreadDetail): MailItem[] {
         sender: String(content.sender),
         recipient: String(content.recipient),
         body: String(content.body),
+        emphasis: content.emphasis,
         attachments: (content.attachments as Record<string, unknown>[]) ?? [],
         incoming: true,
       };

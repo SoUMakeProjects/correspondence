@@ -163,7 +163,7 @@ def execute(
 
 def verified_outcome(session, data_dir, run, outcome):
     case = require_case(session, run.case_id)
-    report, _ = assess_case(session, data_dir, run.case_id)
+    report, snapshot = assess_case(session, data_dir, run.case_id)
     pending = [c.model_dump(mode="json") for c in report.concerns if c.disposition != "resolved"]
     handoffs = list(
         session.scalars(
@@ -213,6 +213,13 @@ def verified_outcome(session, data_dir, run, outcome):
             409, "pending_plan_required", "Record the actual pending concern plan before pausing."
         )
     if outcome == "waiting_for_input":
+        if case.status == "transferred" and any(h.status == "acknowledged" for h in handoffs):
+            raise DomainError(
+                409,
+                "handoff_acknowledged",
+                "The current handoff is acknowledged and the case is transferred. Finish "
+                "transferred.",
+            )
         response_blocked = any("response" in f.blocks for f in report.findings)
         if (
             any(c["disposition"] == "pending_borrower" for c in pending)
@@ -223,6 +230,22 @@ def verified_outcome(session, data_dir, run, outcome):
                 409,
                 "information_request_not_sent",
                 "Issue the supported information request before waiting for borrower input.",
+            )
+        if (
+            snapshot["simulation"]["scenario_key"] == "DEMO-04"
+            and not response_blocked
+            and not session.scalar(
+                select(OutboxEntry.id)
+                .join(ResponseDraft, OutboxEntry.draft_id == ResponseDraft.id)
+                .where(ResponseDraft.case_id == case.id, OutboxEntry.status == "sent")
+            )
+        ):
+            # Counsel's dispute must be acknowledged in writing before the case waits on
+            # Compliance; a recorded handoff alone leaves the representative without an answer.
+            raise DomainError(
+                409,
+                "acknowledgment_not_sent",
+                "Send the interim acknowledgment to the authorized representative before waiting.",
             )
         if report.routing.route == "Compliance" and not handoffs:
             raise DomainError(

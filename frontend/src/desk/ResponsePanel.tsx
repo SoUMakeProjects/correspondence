@@ -5,6 +5,7 @@ import CaseWorkflow from "../CaseWorkflow";
 import { packageUrl } from "../SystemViews";
 import { clientName, displayText, displayValue } from "../presentation";
 import DeskIcon from "./DeskIcon";
+import { LetterText } from "../LetterText";
 import { dateTime, isActive, shortTime, titleCase } from "./deskFormat";
 import type { DeskDraft, Row } from "./deskFormat";
 import { REVIEWER } from "../auth/reviewer";
@@ -239,7 +240,9 @@ export default function ResponsePanel({
                   Re: {data.case.subject}
                   <small>Loan {data.case.loan_identifier}</small>
                 </p>
-                <div className="letter-body">{displayText(draft.body)}</div>
+                <div className="letter-body">
+                  <LetterText body={draft.body} emphasis={draft.emphasis} />
+                </div>
                 <footer>
                   Correspondence Services
                   <span>{clientName(data.case.client_code)}</span>

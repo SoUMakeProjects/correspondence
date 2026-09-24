@@ -85,7 +85,7 @@
     "key": "court-record",
     "availability": "available",
     "storage_key": "DEMO-04/base/court-record.pdf",
-    "sha256": "682560dc7e077a2a5aafaf73c45fc6ed6997b2f37146b892fa3d7f73eed2cfbd"
+    "sha256": "3fef6bf538d5e516801458ab9bf18dcec586c305fea05bd7f34f49483fa98b9e"
   },
   {
     "scenario_id": "DEMO-04",
@@ -93,7 +93,7 @@
     "key": "representation",
     "availability": "available",
     "storage_key": "DEMO-04/base/representation.pdf",
-    "sha256": "88fdc7938e7571a9d68e56b7bd00244a731bae179e81a0d992b8065318e86625"
+    "sha256": "93033f22f7cad6c3fc08ce0c9565848125651f4781f3394293a32862a1f06088"
   },
   {
     "scenario_id": "DEMO-04",
@@ -101,7 +101,7 @@
     "key": "court-record",
     "availability": "available",
     "storage_key": "DEMO-04/followup/court-record.pdf",
-    "sha256": "ec5bd2ceab86fb8473965c9bfa2fc331bc8cd85075a4a70b8ff72883e501704a"
+    "sha256": "5b1e51aa113085ec024f3e479908cb75d1cf6ab1a3aac379e62428e36a8ca4a4"
   },
   {
     "scenario_id": "DEMO-04",
@@ -109,7 +109,7 @@
     "key": "representation",
     "availability": "available",
     "storage_key": "DEMO-04/followup/representation.pdf",
-    "sha256": "10c263f4fc0f85298efa18d1f59614f0f4bdf0ab645dde3f358555366435a46f"
+    "sha256": "dea16a03f4e4b4236d9a8211bf91cc23542b61c356244bdd083e88ea1f69be9f"
   },
   {
     "scenario_id": "DEMO-04",
@@ -117,7 +117,7 @@
     "key": "specialist-determination",
     "availability": "available",
     "storage_key": "DEMO-04/followup/specialist-determination.pdf",
-    "sha256": "b7a2ea84c5ec5f1885c951cfdc71520fa9c82a251b7ff0ecb93a85983e99c5de"
+    "sha256": "8a862014be3477b203faa6133030d1871afd55c676baa68890fa721e7b6acbd2"
   },
   {
     "scenario_id": "DEMO-05",

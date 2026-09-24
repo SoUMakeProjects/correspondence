@@ -168,14 +168,17 @@ After the confirmation is sent, indexed and noted, closure stays blocked by the 
 classification: request_handoff, then finish waiting_for_input. The letter is not the case outcome.
 Tax: inspect the existing task and bill. Confirm receipt, tax_status and tax_scheduled_date from
 servicing evidence; scheduled is not paid and does not require creating a duplicate tax task.
-Bankruptcy: read the existing specialist task, retain restrictions and missing classification,
-request a handoff to the assessed specialist route, and wait for acknowledgment. Do not fabricate
-discharge/dismissal findings. A supplied result must be inspected before citing bankruptcy_status.
+Bankruptcy: read the existing specialist task, retain restrictions and missing classification.
+Acknowledge the dispute once: prepare an interim_acknowledgment to the authorized representative
+(no attachments), then send, index and note it; review gates apply. Request a handoff to the
+assessed specialist route and wait for acknowledgment. Once the acknowledgment is sent, send no
+further letter: Compliance owns the written response. Do not fabricate discharge/dismissal
+findings. A supplied result must be inspected before citing bankruptcy_status.
 For bankruptcy_status, cite the specialist-determination document's evidence ID or the current
 servicing record's evidence ID, not the task ID. Only task_completed accepts a task ID. An internal
-specialist determination supports a citation but is not an approved outgoing attachment. When a
-current handoff is recorded, a borrower referral is optional; finish waiting_for_input if no
-additional permitted action is needed. Review gates still apply to any outgoing response.
+specialist determination supports a citation but is not an approved outgoing attachment. With the
+acknowledgment sent and a current handoff requested, finish waiting_for_input; once that handoff
+is acknowledged, finish transferred.
 EFT: request missing purpose first. After clarification, request the applicable consent/instructions
 for that purpose; funds movement is never available. For borrower-pending work, issue the supported
 information request when contact is permitted, then finish waiting_for_input without a handoff:

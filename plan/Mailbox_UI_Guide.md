@@ -44,7 +44,7 @@ The Azure agent reads the actual subject, body and uploaded PDF text and classif
 | 0099000001 | lauren.whitaker@outlook.com | Name change |
 | 0099000002 | marcus.j.delgado@outlook.com | Amortization schedule |
 | 0099000003 | priya.raman@outlook.com | Tax inquiry |
-| 0099000004 | counsel.demo@example.com | Bankruptcy review |
+| 0099000004 | monica.ferrante@ferrantehale.example.com (borrower's attorney) | Bankruptcy / credit reporting dispute |
 | 0099000005 | danielle.foster@outlook.com | EFT clarification |
 
 These are the current local servicing records. The topic does not choose the loan: a name-change request for loan 0092000000, for example, cannot silently become the prepared name-change loan.

@@ -12,6 +12,8 @@ people/, organization/) are written by hand.
 - correspondence/NN-inbound-*.eml and NN-outbound-*.eml: every mailbox message and every
   delivery, in order, with their attachments
 - correspondence/NN-servicing-notes.txt: the ILS final notes
+- correspondence/NN-handoff-routing-notes.txt: CCT specialist handoffs with their routing and
+  acknowledgment notes (only when the case has handoffs)
 - correspondence/README.md: the thread in readable form
 - documents/: the case's source PDFs and the indexed OnBase packages
 - rehearsal/live-run-results.json: calls, time, tokens, tools and checks per run and path
@@ -120,13 +122,16 @@ def build(args) -> None:
         if target.exists():
             for item in target.glob("*"):
                 if item.is_file() and (
-                    item.suffix in {".eml", ".pdf", ".txt"} or item.name == "live-run-results.json"
+                    item.suffix in {".eml", ".pdf", ".txt"}
+                    or item.name == "live-run-results.json"
                 ):
                     item.unlink()
         target.mkdir(parents=True, exist_ok=True)
 
     case = rows(db, "select * from cases")[0]
-    client = json.loads(rows(db, "select context from loans")[0]["context"])["client_configuration"]
+    client = json.loads(rows(db, "select context from loans")[0]["context"])[
+        "client_configuration"
+    ]
     brand = client["display_name"]
     result = json.loads((source / "results.json").read_text())["cases"][0]
     run_start = moment(result["runs"][0]["checkpoint"]["started_at"])
@@ -135,7 +140,9 @@ def build(args) -> None:
     def business_time(created: str, initial: bool = False) -> datetime:
         if initial:
             return received.astimezone(EASTERN)
-        return (fixture.evaluation_at + (moment(created) - run_start)).astimezone(EASTERN)
+        return (fixture.evaluation_at + (moment(created) - run_start)).astimezone(
+            EASTERN
+        )
 
     evidence = {e["id"]: e for e in rows(db, "select * from evidence")}
     messages = rows(db, "select * from mail_messages order by created_at")
@@ -146,13 +153,21 @@ def build(args) -> None:
     ]
     events.sort(key=lambda e: e[1])
 
+    def party(address: str) -> str:
+        """Display name for a correspondent: the borrower, or their verified representative."""
+        context = fixture.loan_context
+        if address != fixture.borrower_email and context.get("representative_name"):
+            firm = context.get("representative_firm")
+            return context["representative_name"] + (f", {firm}" if firm else "")
+        return fixture.borrower_display_name
+
     thread, number = [], 0
     for index, (direction, created, row) in enumerate(events):
         number += 1
         when = business_time(created, initial=index == 0 and direction == "in")
         mail = EmailMessage()
         if direction == "in":
-            mail["From"] = f"{fixture.borrower_display_name} <{row['sender']}>"
+            mail["From"] = f'"{party(row["sender"])}" <{row["sender"]}>'
             mail["To"] = f"{brand} <{row['recipient'] or SERVICE_ADDRESS}>"
             mail["Subject"] = row["subject"]
             body = row["body"]
@@ -164,10 +179,12 @@ def build(args) -> None:
         else:
             sent = json.loads(row["sent_content"])
             mail["From"] = f"{brand} <{sent['sender']}>"
-            mail["To"] = f"{fixture.borrower_display_name} <{sent['recipient']}>"
+            mail["To"] = f'"{party(sent["recipient"])}" <{sent["recipient"]}>'
             mail["Subject"] = f"RE: {subject}"
             body = sent["body"]
-            attached = [(a["title"], a["storage_key"]) for a in sent.get("attachments", [])]
+            attached = [
+                (a["title"], a["storage_key"]) for a in sent.get("attachments", [])
+            ]
             kind = "response"
         mail["Date"] = format_datetime(when)
         mail.set_content(body)
@@ -182,7 +199,9 @@ def build(args) -> None:
                     filename=name,
                 )
                 files.append(name)
-        name = f"{number:02}-{'inbound' if direction == 'in' else 'outbound'}-{kind}.eml"
+        name = (
+            f"{number:02}-{'inbound' if direction == 'in' else 'outbound'}-{kind}.eml"
+        )
         (out / "correspondence" / name).write_bytes(bytes(mail))
         thread.append(
             {
@@ -204,6 +223,30 @@ def build(args) -> None:
     (out / "correspondence" / notes_file).write_text(
         "\n\n----------\n\n".join(n["content"] for n in notes) + "\n"
     )
+
+    handoffs = rows(db, "select * from specialist_handoffs order by created_at")
+    handoffs_file = None
+    if handoffs:
+        number += 1
+        handoffs_file = f"{number:02}-handoff-routing-notes.txt"
+        text = [f"CCT specialist handoffs – loan {fixture.loan_identifier}", ""]
+        for index, row in enumerate(handoffs, 1):
+            text += [
+                f"Handoff {index}: {row['route']} → {row['owner'].removeprefix('Demo ')}",
+                f"Status: {row['status']}"
+                + (f" by {row['acknowledged_by']}" if row["acknowledged_by"] else ""),
+                "",
+                row["routing_note"] or "(no routing note)",
+                "",
+                *(
+                    ["Acknowledgment:", row["acknowledgment_note"], ""]
+                    if row["acknowledgment_note"]
+                    else []
+                ),
+                "-" * 72,
+                "",
+            ]
+        (out / "correspondence" / handoffs_file).write_text("\n".join(text))
 
     for row in evidence.values():
         if row["storage_key"] and (docs / row["storage_key"]).is_file():
@@ -233,7 +276,11 @@ def build(args) -> None:
 
     lines = [f"# Correspondence thread — loan {fixture.loan_identifier}", ""]
     for index, item in enumerate(thread, 1):
-        heading = "Inbound" if item["direction"] == "in" else "Outbound response (live agent run)"
+        heading = (
+            "Inbound"
+            if item["direction"] == "in"
+            else "Outbound response (live agent run)"
+        )
         lines += [
             f"## {index}. {heading}",
             "",
@@ -244,7 +291,11 @@ def build(args) -> None:
             f"| Date | {item['when'].strftime('%A, %B %-d, %Y, %-I:%M %p')} ET |",
             f"| Subject | {item['subject']} |",
             f"| Attachments | {', '.join(item['attachments']) or 'None'} |",
-            *([f"| Delivery reference | {item['reference']} |"] if item["reference"] else []),
+            *(
+                [f"| Delivery reference | {item['reference']} |"]
+                if item["reference"]
+                else []
+            ),
             f"| File | `{item['file']}` |",
             "",
             "```text",
@@ -289,6 +340,16 @@ def build(args) -> None:
         ),
         "",
     ]
+    if handoffs_file:
+        lines += [
+            f"## {len(thread) + 2}. Specialist handoffs (CCT)",
+            "",
+            (
+                f"`{handoffs_file}` holds {len(handoffs)} handoff(s) with the internal routing "
+                "note for the receiving team and, once received, its acknowledgment."
+            ),
+            "",
+        ]
     (out / "correspondence" / "README.md").write_text("\n".join(lines))
 
     rehearsal = {
@@ -312,8 +373,12 @@ def build(args) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("--scenario", required=True)
-    parser.add_argument("--out", required=True, help="Pack folder, e.g. usecases/demo-3-tax")
-    parser.add_argument("--mailbox", help="Mailbox evaluation folder (preferred source)")
+    parser.add_argument(
+        "--out", required=True, help="Pack folder, e.g. usecases/demo-3-tax"
+    )
+    parser.add_argument(
+        "--mailbox", help="Mailbox evaluation folder (preferred source)"
+    )
     parser.add_argument("--api", help="API evaluation folder (rehearsal numbers)")
     parser.add_argument("--deployment", default="gpt-5.6-sol")
     args = parser.parse_args()

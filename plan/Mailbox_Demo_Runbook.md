@@ -75,11 +75,13 @@ Expected result: **Closed**, with the existing task reused and one approved deli
 
 ## DEMO-04: Bankruptcy and credit-reporting conflict
 
-Send the bankruptcy template from its prepared representative address. The agent detects conflicting facts, preserves the contact restriction and requests specialist involvement.
+Send **Credit reporting dispute – Chapter 13 dismissal – loan ending 0004** from Monica A. Ferrante, the borrower's attorney. The dismissal order and the borrower's signed authorization are attached. The people, the documents, the letter decision and a captured live thread are in [the use-case pack](../usecases/demo-4-bankruptcy-dispute/README.md). The agent detects the conflict (court order: dismissed without discharge; servicing marker: discharged), keeps contact with counsel only, reads the existing Bankruptcy Team task and drafts an acknowledgment to counsel that needs review.
 
-In **ILS**, review and record the prepared specialist determination. The agent automatically reads it and updates the handoff. In ILS or **Review queue**, act as the receiving specialist: review the current handoff, enter the receiving identity and acknowledge receipt. The agent automatically verifies the acknowledgment.
+In **Review queue**, check that the acknowledgment goes to counsel, attaches nothing and states no credit reporting outcome, then approve it. The agent automatically sends it, saves the package and note, and records a handoff to Compliance with an internal routing note. The acknowledgment appears in the mailbox conversation.
 
-Expected result: **Transferred**, with the existing specialist task reused and unresolved concerns retained. The normal evaluated sequence does not send a borrower response. Any proposed response remains subject to recipient and review checks.
+In **ILS**, review and record the prepared Bankruptcy Team result. The agent automatically reads it and records a current handoff that cites the determination; it sends no second letter. In ILS or the response panel, act as Compliance: open the routing note, then acknowledge receipt. The agent automatically verifies the acknowledgment.
+
+Expected result: **Transferred**, with the existing specialist task reused, exactly one delivery (to counsel) and the unresolved concerns retained. Nothing is sent to the borrower's own address.
 
 ## DEMO-05: Unclear EFT request
 

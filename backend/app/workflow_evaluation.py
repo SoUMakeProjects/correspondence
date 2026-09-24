@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 import time
 from uuid import uuid4
 
@@ -202,7 +203,11 @@ def evaluate(settings, scenarios, *, mailbox=False):
                         "draft_id": draft["id"],
                         "draft_version": draft["version"],
                         "decision": "approve",
-                        "note": "Reviewed current facts and evidence; scheduled is not paid.",
+                        "note": {
+                            "DEMO-03": "Reviewed current facts and evidence; scheduled is not paid.",
+                            "DEMO-04": "Reviewed: counsel-only recipient, receipt and referral "
+                            "only; no credit reporting outcome stated.",
+                        }.get(scenario, "Reviewed current facts and evidence."),
                         **values_for_actor(),
                     },
                 )
@@ -241,6 +246,9 @@ def evaluate(settings, scenarios, *, mailbox=False):
                     record["checks"]["initial_handoff"] = bool(
                         get(prefix + "/workflow")["handoffs"]
                     )
+                    record["checks"]["acknowledgment_sent_before_determination"] = bool(
+                        get(prefix + "/artifacts")["outbox"]
+                    )
                     supply("bankruptcy_specialist_result")
                     run()
                     settle()
@@ -253,7 +261,7 @@ def evaluate(settings, scenarios, *, mailbox=False):
                             "request_id": str(uuid4()),
                             "expected_revision": get(prefix)["revision"],
                             "handoff_id": handoff["id"],
-                            "actor": "Demo Compliance recipient",
+                            "actor": "Compliance – credit reporting disputes",
                         },
                     )
                     record["interventions"].append({"kind": "handoff_acknowledged"})
@@ -335,14 +343,43 @@ def evaluate(settings, scenarios, *, mailbox=False):
                     checks["tax_team_result_cited"] = "Tax Team review reference:" in letter
                     checks["due_date_in_letter"] = "Due date: October 30, 2026" in letter
                 if scenario == "DEMO-04":
+                    counsel = "monica.ferrante@ferrantehale.example.com"
                     checks["classification_exception_retained"] = (
                         assessment["classification"] is None
                     )
                     checks["representative_only"] = assessment[
                         "authorized_recipient"
-                    ] == "counsel.demo@example.com" and all(
-                        e["sent_content"]["recipient"] == "counsel.demo@example.com"
+                    ] == counsel and all(
+                        e["sent_content"]["recipient"] == counsel for e in saved["outbox"]
+                    )
+                    letters = [e["sent_content"]["body"] for e in saved["outbox"]]
+                    checks["single_acknowledgment"] = len(letters) == 1 and bool(
+                        "It is not the result of our investigation." in letters[0]
+                        and "Written response by: October 21, 2026" in letters[0]
+                    )
+                    checks["no_reporting_outcome_stated"] = not any(
+                        re.search(
+                            r"(has|have) been (corrected|removed|deleted)|we (corrected|"
+                            r"removed|deleted|will correct|will remove|will delete)",
+                            body,
+                            re.IGNORECASE,
+                        )
+                        for body in letters
+                    )
+                    checks["borrower_not_contacted"] = all(
+                        "greg.lindqvist@outlook.com" not in json.dumps(e["sent_content"])
                         for e in saved["outbox"]
+                    )
+                    checks["final_run_transferred"] = (
+                        record["runs"][-1]["checkpoint"].get("reason") == "verified_handoff"
+                    )
+                    handoffs = get(prefix + "/workflow")["handoffs"]
+                    checks["determination_routed_to_compliance"] = any(
+                        h["current"]
+                        and h["status"] == "acknowledged"
+                        and "Bankruptcy Team determination BK-REV-260922-004"
+                        in (h.get("routing_note") or "")
+                        for h in handoffs
                     )
                 if scenario == "DEMO-05":
                     checks["consent_still_required"] = any(

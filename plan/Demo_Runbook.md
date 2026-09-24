@@ -69,11 +69,16 @@ Measured on September 24, 2026 with `gpt-5.6-sol`: three runs of 5–7, 5–7 an
 
 ## 4. Specialist handoff: conflicting bankruptcy evidence
 
-1. Load **DEMO-04**, inspect the contradiction and representative restriction, and start.
-2. Inspect the recorded handoff. Receive **Supply bankruptcy specialist determination** and resume.
-3. Inspect the current handoff and acknowledge receipt as the signed-in reviewer, **Admin**. Resume once more.
+Attorney **Monica A. Ferrante** (Ferrante & Hale, LLC, monica.ferrante@ferrantehale.example.com) disputes the credit reporting for her client **Gregory P. Lindqvist**. His Chapter 13 case No. 24-10382 was dismissed on July 14, 2026 without a discharge, but the servicer's bankruptcy marker (from an August 3 import) and his credit report say "discharged". She attaches the dismissal order and his signed authorization. The persona, the documents, the letter decision and a captured live thread are in [`usecases/demo-4-bankruptcy-dispute/`](../usecases/demo-4-bankruptcy-dispute/README.md).
 
-Expected: the existing task is reused, supplied determination is inspected, restrictions stay enforced and the case becomes **transferred**. No borrower message is needed to establish the handoff. Transfer does not resolve every concern or mean closed. Do not claim this fixture implements all bankruptcy response rules.
+1. Load **DEMO-04**, inspect the contradiction and the representative-only restriction, and start. The agent drafts an acknowledgment to counsel and pauses for review (Harbor Point reviews every letter).
+2. Approve the current version and resume. The agent sends, indexes and notes the acknowledgment, then records a handoff to Compliance with a routing note.
+3. Receive **Supply bankruptcy specialist determination** (`BK-REV-260922-004`) and resume. The earlier handoff becomes out of date, and the agent records a current one that cites the determination. It sends no second letter.
+4. Inspect the current handoff and its routing note, and acknowledge receipt as the signed-in reviewer, **Admin**. Resume once more.
+
+Expected: one acknowledgment, sent only to counsel. It confirms receipt, counsel-only contact, the referral and a written response by October 21, 2026, and states no credit reporting outcome, correction or liability. The existing task is reused, the supplied determination is inspected, the restriction stays enforced and the case becomes **transferred**. Transfer does not resolve every concern or mean closed. A second letter (`acknowledgment_already_sent`), an information request, any attachment or a letter to the borrower's own address is rejected. Do not claim this fixture implements all bankruptcy response rules.
+
+Measured on September 24, 2026 with `gpt-5.6-sol` (prompt `phase8-v4`): four runs of 6–7, 7, 6 and 2 model calls, about 21–32 s each (6–9 s for the last), and about 160–170k tokens in total, in both the API and the Mailbox paths.
 
 ## 5. Clarification: EFT intent
 

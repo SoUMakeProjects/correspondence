@@ -2,6 +2,7 @@ import { displayText, displayValue } from "../presentation";
 import type { MailItem } from "./mailboxData";
 import { initials, mailDate, person } from "./mailboxData";
 import MailIcon from "./MailIcon";
+import { LetterText } from "../LetterText";
 
 export default function MailMessageCard({
   item,
@@ -112,7 +113,9 @@ export default function MailMessageCard({
               ))}
             </div>
           )}
-          <div className="mail-letter-body">{displayText(item.body)}</div>
+          <div className="mail-letter-body">
+            <LetterText body={item.body} emphasis={item.emphasis} />
+          </div>
           {onReply && (
             <footer className="mail-card-reply-actions">
               <button

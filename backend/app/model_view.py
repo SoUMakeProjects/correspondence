@@ -18,6 +18,8 @@ import json
 REFERENCE = "$same_as"
 # Server bookkeeping: the model never supplies or reasons about these values.
 OMITTED = {"creation_key", "creation_hash", "content_sha256", "storage_key"}
+# Display-only text for the receiving team; the handoff's structured fields stay verbatim.
+OMITTED |= {"routing_note", "acknowledgment_note"}
 
 
 def _encoded(value) -> str:

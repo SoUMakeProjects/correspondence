@@ -74,6 +74,8 @@ const GROUPS: { title: string; keys: string[] }[] = [
       "requester_role",
       "authorized_recipient",
       "representative_name",
+      "representative_firm",
+      "representative_phone",
       "representation_verified",
       "communication_restriction",
     ],
@@ -104,8 +106,13 @@ const GROUPS: { title: string; keys: string[] }[] = [
   {
     title: "Bankruptcy",
     keys: [
+      "bankruptcy_case_number",
+      "bankruptcy_chapter",
+      "bankruptcy_court",
+      "bankruptcy_filed_date",
       "servicing_bankruptcy_status",
       "servicing_status_source",
+      "servicing_status_imported_at",
       "specialist_determination",
     ],
   },
@@ -241,9 +248,11 @@ function Alerts({ data, context }: { data: SystemCase; context: Row }) {
     alerts.push({
       tone: "warn",
       text: `Bankruptcy marker: ${sentence(context.servicing_bankruptcy_status)}${
-        context.servicing_status_source
-          ? ` (${sentence(context.servicing_status_source).toLowerCase()})`
-          : ""
+        context.specialist_determination
+          ? ` (verified by ${String(context.specialist_determination)})`
+          : context.servicing_status_source
+            ? ` (${sentence(context.servicing_status_source).toLowerCase()})`
+            : ""
       }${context.specialist_determination ? "" : " · awaiting specialist determination"}`,
     });
   if (context.tax_status === "scheduled" && !context.tax_paid_at)

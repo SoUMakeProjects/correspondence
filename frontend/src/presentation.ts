@@ -17,14 +17,8 @@ const labels: Record<string, string> = {
   "Demo Bankruptcy Team": "Bankruptcy Team",
   "Demo Compliance Team": "Compliance Team",
   "Demo alternate owner": "Alternate owner",
-  "Demo Legal Representative": "Legal Representative",
   "Synthetic servicing record": "Servicing record",
-  "Synthetic court-status record": "Court-status record",
-  "Synthetic representation authorization": "Representation authorization",
-  "Synthetic representative authorization": "Representative authorization",
   "Synthetic legal name-change certificate": "Legal name-change certificate",
-  "Synthetic bankruptcy specialist determination":
-    "Bankruptcy specialist determination",
   fixture_loader: "Case intake",
   demo_presenter: "Caseworker",
   local_presenter: "Caseworker",
@@ -115,20 +109,49 @@ const copy: [string, string][] = [
     "Supplied synthetic evidence received; the agent must inspect it before continuing.",
     "Evidence received; the agent must inspect it before continuing.",
   ],
-  [
-    "The supplied synthetic authorization designates",
-    "The supplied authorization designates",
-  ],
 ];
 
 export function displayText(value: unknown): string {
-  return copy
-    .reduce(
-      (text, [from, to]) => text.replaceAll(from, to),
-      String(value ?? ""),
-    )
-    .replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, "\n\n")
-    .trim();
+  return tidy(cleanCopy(String(value ?? "")));
+}
+
+const cleanCopy = (text: string) =>
+  copy.reduce((t, [from, to]) => t.replaceAll(from, to), text);
+const tidy = (text: string) =>
+  text.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, "\n\n").trim();
+
+export type TextRun = { text: string; bold: boolean };
+
+/**
+ * displayText() split into bold/plain runs. `spans` are server-computed [start, end)
+ * offsets into the raw body (see backend app/letter_emphasis.py); they are applied
+ * before display cleanup so offsets stay valid. Invalid spans are ignored.
+ */
+export function displayRuns(value: unknown, spans: unknown): TextRun[] {
+  const raw = String(value ?? "");
+  const runs: TextRun[] = [];
+  let cursor = 0;
+  for (const span of Array.isArray(spans) ? spans : []) {
+    const [a, b] = span as [number, number];
+    if (!Number.isInteger(a) || !Number.isInteger(b)) continue;
+    if (a < cursor || b <= a || b > raw.length) continue;
+    if (a > cursor) runs.push({ text: raw.slice(cursor, a), bold: false });
+    runs.push({ text: raw.slice(a, b), bold: true });
+    cursor = b;
+  }
+  if (cursor < raw.length) runs.push({ text: raw.slice(cursor), bold: false });
+  if (!runs.some((r) => r.bold))
+    return [{ text: displayText(raw), bold: false }];
+  // Same cleanup as displayText(): copy substitutions per run, then collapse/trim the ends.
+  const cleaned = runs.map((r) => ({ ...r, text: cleanCopy(r.text) }));
+  cleaned[0].text = cleaned[0].text.trimStart();
+  cleaned[cleaned.length - 1].text = cleaned[cleaned.length - 1].text.trimEnd();
+  return cleaned
+    .map((r) => ({
+      ...r,
+      text: r.text.replace(/\n[ \t]*\n(?:[ \t]*\n)+/g, "\n\n"),
+    }))
+    .filter((r) => r.text);
 }
 
 export function isOperationalGuidance(item: {

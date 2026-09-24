@@ -41,6 +41,8 @@ type Handoff = {
   current: boolean;
   acknowledged_by: string | null;
   restrictions: string[];
+  routing_note?: string | null;
+  acknowledgment_note?: string | null;
 };
 const labels: Record<string, string> = {
   name_legal_document: "Supply legal name-change document",
@@ -688,6 +690,15 @@ export default function CaseWorkflow({
                 <p>
                   Restrictions: {handoff.restrictions.map(readable).join(", ")}
                 </p>
+              )}
+              {!!handoff.routing_note && (
+                <details className="handoff-note">
+                  <summary>Routing note</summary>
+                  <pre>{displayText(handoff.routing_note)}</pre>
+                </details>
+              )}
+              {!!handoff.acknowledgment_note && (
+                <p className="handoff-ack">{handoff.acknowledgment_note}</p>
               )}
               {handoff.current && handoff.status === "requested" && (
                 <button

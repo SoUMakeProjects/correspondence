@@ -3,18 +3,28 @@
   "documents": [
     {
       "key": "specialist-determination",
-      "title": "Synthetic bankruptcy specialist determination",
+      "title": "Bankruptcy Status Determination – BK-REV-260922-004",
       "availability": "available",
       "kind": "document",
       "paragraphs": [
-        "The Demo Bankruptcy Team reconciled the supplied demonstration records: dismissed without discharge.",
-        "The imported discharge marker was incorrect in this synthetic case. Representative-only communication remains required.",
-        "This supplied demo result does not determine actual borrower liability or provide production disclosure wording."
+        "The Bankruptcy Team reviewed the court docket for Chapter 13 case No. 24-10382 (United States Bankruptcy Court for the District of Brandywine). The court entered an order dismissing the case on July 14, 2026 (Docket No. 88), on the Chapter 13 Trustee's motion for failure to make plan payments. No order of discharge was entered.",
+        "The \"discharged\" bankruptcy marker on this loan was set by the August 3, 2026 bankruptcy data import and is incorrect. The servicing bankruptcy status has been corrected to \"dismissed without discharge\", effective July 14, 2026.",
+        "The borrower is represented by Monica A. Ferrante of Ferrante & Hale, LLC under a signed authorization dated September 18, 2026. Communication about this loan must go to counsel only; do not contact the borrower directly.",
+        "Not determined in this review: how the account is reported to the consumer reporting agencies. The credit reporting dispute and the written response to counsel are referred to Compliance (credit reporting disputes)."
       ],
       "facts": {
         "determination": "dismissed_without_discharge",
-        "reference": "DEMO-BK-RESULT-004",
-        "communication_restriction": "representative_only"
+        "reference": "BK-REV-260922-004",
+        "communication_restriction": "representative_only",
+        "case_number": "24-10382",
+        "dismissed_date": "2026-07-14",
+        "order_docket_number": 88,
+        "discharge_entered": false,
+        "previous_marker": "discharged",
+        "previous_marker_source": "August 3, 2026 bankruptcy data import",
+        "reviewed_by": "Andre K. Whitcombe, Bankruptcy Team",
+        "reviewed_at": "2026-09-22T14:40:00Z",
+        "referred_to": "Compliance – credit reporting disputes"
       },
       "declared_loan_identifier": null
     }
@@ -27,12 +37,18 @@
       "status": "completed",
       "pending_reason": null,
       "request": {
-        "review_topic": "bankruptcy_status_and_communication_restrictions"
+        "review_topic": "bankruptcy_status_and_communication_restrictions",
+        "bankruptcy_case_number": "24-10382"
       },
       "result": {
-        "reference": "DEMO-BK-RESULT-004",
+        "reference": "BK-REV-260922-004",
+        "reviewed_at": "2026-09-22T14:40:00Z",
+        "reviewed_by": "Andre K. Whitcombe, Bankruptcy Team",
         "status": "dismissed_without_discharge",
+        "dismissed_date": "2026-07-14",
+        "discharge_entered": false,
         "communication_restriction": "representative_only",
+        "note": "Docket for case No. 24-10382 shows the order dismissing the case entered July 14, 2026 (Docket No. 88); no discharge. The \"discharged\" marker from the August 3, 2026 import was incorrect and has been corrected. Counsel-only contact remains. Credit reporting dispute referred to Compliance.",
         "simulated": true
       },
       "evidence_keys": [
@@ -44,8 +60,8 @@
   ],
   "loan_context_patch": {
     "servicing_bankruptcy_status": "dismissed_without_discharge",
-    "servicing_status_source": "DEMO-BK-RESULT-004",
-    "specialist_determination": "DEMO-BK-RESULT-004"
+    "servicing_status_source": "BK-REV-260922-004",
+    "specialist_determination": "BK-REV-260922-004"
   },
   "version": "1",
   "synthetic": true

@@ -116,7 +116,7 @@ def start(session, settings, case_id, payload, source="live_azure", *, trigger_i
             if source == "live_azure"
             else "test-only",
             "protocol": "chat_completions_v1",
-            "prompt_version": "phase8-v3",
+            "prompt_version": "phase8-v4",
             "tool_contract": 7,
             "limits": {
                 key: getattr(settings, "agent_" + key)

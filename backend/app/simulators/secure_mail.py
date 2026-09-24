@@ -3,6 +3,7 @@ from sqlalchemy import func, select
 from app.assessment import assess_case
 from app.documents import document_path
 from app.domain import DomainError
+from app.letter_emphasis import emphasis_spans, html_body
 from app.models import AgentRun, Concern, Evidence, OutboxEntry, ResponseDraft, new_id
 from app.response_validation import validate_response
 from app.simulators.artifacts import digest
@@ -101,6 +102,9 @@ def send(ctx, draft_id):
         "draft_version": draft.version,
         "case_revision": draft.case_revision,
         "body": draft.body,
+        # Presentation only; the plain body above stays the checked, hashed content.
+        "emphasis": emphasis_spans(draft.body),
+        "html_body": html_body(draft.body),
         "recipient": draft.recipient,
         "attachment_ids": draft.attachment_ids,
         "attachments": attachments,

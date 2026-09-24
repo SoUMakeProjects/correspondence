@@ -10,6 +10,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 from app.domain import DomainError
+from app.letter_emphasis import reportlab_markup
 
 
 def digest(content):
@@ -99,10 +100,11 @@ def package_bytes(case, loan, sent, attachment_contents):
         "Original correspondence",
         case.correspondence_text,
         "Sent response",
-        sent["body"],
     ]:
         story.append(Paragraph(escape(text).replace("\n", "<br/>"), styles["BodyText"]))
         story.append(Spacer(1, 10))
+    story.append(Paragraph(reportlab_markup(sent["body"]), styles["BodyText"]))
+    story.append(Spacer(1, 10))
     document.build(story)
     writer = PdfWriter()
     writer.append(BytesIO(buffer.getvalue()))
